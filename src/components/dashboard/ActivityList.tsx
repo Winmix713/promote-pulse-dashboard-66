@@ -19,7 +19,7 @@ const activityItems = [
     icon: <ShoppingBag className="h-4 w-4" />,
     iconBg: "bg-emerald-500/10 text-emerald-500",
     title: "New order #1832412",
-    description: "Macbook Pro 14" with M2 chip",
+    description: "Macbook Pro 14\" with M2 chip",
     time: "2h ago",
     avatar: "/placeholder.svg",
     initials: "JD"
