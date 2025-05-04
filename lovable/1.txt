@@ -1,0 +1,841 @@
+1:
+
+HTML CODE:
+
+""
+<!-- From Uiverse.io by narmesh_sah --> 
+<div class="card-container">
+  <div class="card">
+    <div class="main_card">
+      <div class="glow glow1"></div>
+      <div class="main_card-content">
+        <span class="battery">69%</span>
+        <p class="charging">
+          <svg
+            width="18px"
+            height="18px"
+            viewBox="0 0 24 24"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>flash_fill</title>
+              <g
+                id="页面-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Device" transform="translate(-336.000000, -48.000000)">
+                  <g
+                    id="flash_fill"
+                    transform="translate(336.000000, 48.000000)"
+                  >
+                    <path
+                      d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                      id="MingCute"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M13.2317,1.35987 C13.8635,0.601694 15.0952,1.11999 14.9948,2.10179 L14.2893,9.00005 L20,9.00005 C20.8478,9.00005 21.311,9.98891 20.7682,10.6402 L10.7682,22.6402 C10.1364,23.3984 8.90474,22.8801 9.00515,21.8983 L9.71065,15.0001 L3.99996,15.0001 C3.15212,15.0001 2.68896,14.0112 3.23174,13.3599 L13.2317,1.35987 Z"
+                      id="路径"
+                      fill="#8d8e8d"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          CHARGING
+        </p>
+        <div class="battery_health">
+          <p style="display:flex;align-items:center;gap:0.5rem;">
+            <svg
+              fill="#8d8e8d"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="18px"
+              height="18px"
+              viewBox="0 0 34 39.082"
+              xml:space="preserve"
+              transform="matrix(-1, 0, 0, 1, 0, 0)"
+              stroke="#8d8e8d"
+              stroke-width="0.00039081"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path
+                      d="M0.854,16.881C0.381,16.881,0,17.264,0,17.735v3.608c0,0.473,0.383,0.855,0.854,0.855c0.471,0,0.854-0.383,0.854-0.855v-3.608C1.708,17.264,1.325,16.881,0.854,16.881z"
+                    ></path>
+                    <path
+                      d="M31,12.056H5.794c-1.992,0-3.615,1.622-3.615,3.615v7.738c0,1.992,1.623,3.615,3.615,3.615H31c1.994,0,3.615-1.623,3.615-3.615v-7.738C34.615,13.678,32.994,12.056,31,12.056z M31.8,23.41c0,0.43-0.351,0.779-0.781,0.779H5.794c-0.431,0-0.779-0.351-0.779-0.779v-7.738c0-0.43,0.351-0.78,0.779-0.78H31c0.433,0,0.781,0.351,0.781,0.78V23.41z"
+                    ></path>
+                    <path
+                      d="M30.5,15.579H7.806c-0.365,0-0.664,0.298-0.664,0.665v6.593c0,0.367,0.299,0.664,0.664,0.664H30.5c0.366,0,0.666-0.297,0.666-0.664v-6.593C31.166,15.877,30.868,15.579,30.5,15.579z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            96% BATTERY HEALTH
+          </p>
+          <p style="display:flex;align-items:center;gap:0.5rem;">
+            <svg
+              width="18px"
+              height="18px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              transform="matrix(-1, 0, 0, 1, 0, 0)rotate(90)"
+              stroke="#8d8e8d"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3.57996 5.15991H17.42C19.08 5.15991 20.42 6.49991 20.42 8.15991V11.4799"
+                  stroke="#8d8e8d"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M6.73996 2L3.57996 5.15997L6.73996 8.32001"
+                  stroke="#8d8e8d"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M20.42 18.84H6.57996C4.91996 18.84 3.57996 17.5 3.57996 15.84V12.52"
+                  stroke="#8d8e8d"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M17.26 21.9999L20.42 18.84L17.26 15.6799"
+                  stroke="#8d8e8d"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            215 CYCLES
+          </p>
+        </div>
+        <div class="battery_bar">
+          <div
+            class="bat_bar"
+            style="background:linear-gradient(90deg,transparent,#1e7344);"
+          ></div>
+          <div
+            class="bat_bar"
+            style="background:linear-gradient(90deg,#1e7344,#1eaa44);"
+          ></div>
+          <div
+            class="bat_bar"
+            style="background:linear-gradient(90deg,#1eaa44,#0fff66);"
+          ></div>
+          <div class="bat_bar"></div>
+          <div
+            style="background:linear-gradient(90deg,#3ae98a 15%,#414441 0);"
+            class="bat_bar"
+          ></div>
+          <div style="background:#414441;" class="bat_bar"></div>
+        </div>
+      </div>
+      <div class="glow glow2"></div>
+    </div>
+  </div>
+  <div class="s_path">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 1226 1135"
+      height="400"
+      width="400"
+    >
+      <path
+        stroke-width="30"
+        stroke="url(#paint0_linear_29_11)"
+        d="M1004.99 15.8218H220.014C106.92 15.8218 15.2388 121.677 15.2388 252.255V331.067C15.2388 461.645 106.92 567.5 220.014 567.5H1004.99C1118.08 567.5 1209.76 461.645 1209.76 331.067V252.255C1209.76 121.677 1118.08 15.8218 1004.99 15.8218Z"
+      ></path>
+      <path
+        fill="white"
+        d="M30 246.867C30 240.313 23.2843 235 15 235C6.71573 235 0 240.313 0 246.867V401.133C0 407.687 6.71573 413 15 413C23.2843 413 30 407.687 30 401.133V246.867Z"
+      ></path>
+      <path
+        stroke-width="30"
+        stroke="url(#paint1_linear_29_11)"
+        d="M1210.52 883.245C1210.52 1013.82 1118.84 1119.68 1005.75 1119.68H220.775C107.681 1119.68 16 1013.82 16 883.245V804.434C16 673.855 107.681 568 220.775 568H1210.52V883.245Z"
+      ></path>
+      <path
+        fill="#222221"
+        d="M1195 887.2C1195 893.717 1201.72 899 1210 899C1218.28 899 1225 893.717 1225 887.2V733.8C1225 727.283 1218.28 722 1210 722C1201.72 722 1195 727.283 1195 733.8V887.2Z"
+      ></path>
+      <path fill="#222221" d="M425 1104V1134H834V1104H425Z"></path>
+      <path
+        fill="white"
+        d="M304.667 1104C298.776 1104 294 1110.72 294 1119C294 1127.28 298.776 1134 304.667 1134H443.333C449.224 1134 454 1127.28 454 1119C454 1110.72 449.224 1104 443.333 1104H304.667Z"
+      ></path>
+      <path
+        fill="white"
+        d="M887.267 553C881.597 553 877 559.716 877 568C877 576.284 881.597 583 887.267 583H1020.73C1026.4 583 1031 576.284 1031 568C1031 559.716 1026.4 553 1020.73 553H887.267Z"
+      ></path>
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          y2="564.261"
+          x2="604.083"
+          y1="467.016"
+          x1="641.51"
+          id="paint0_linear_29_11"
+        >
+          <stop stop-color="white" offset="0.788547"></stop>
+          <stop stop-opacity="0" stop-color="#181918" offset="1"></stop>
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          y2="923.443"
+          x2="1066.13"
+          y1="441.902"
+          x1="700.291"
+          id="paint1_linear_29_11"
+        >
+          <stop stop-color="white" offset="0.535865"></stop>
+          <stop stop-opacity="0" stop-color="#181918" offset="0.556434"></stop>
+          <stop stop-opacity="0" stop-color="#181918" offset="0.706811"></stop>
+          <stop stop-opacity="0" stop-color="#181918" offset="0.817395"></stop>
+          <stop stop-opacity="0" stop-color="#181918" offset="0.948396"></stop>
+          <stop stop-color="#222221" offset="1"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+""
+
+CSS CODE
+
+""
+/* From Uiverse.io by narmesh_sah */ 
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  transform: scale(0.7);
+  transition: all 0.3s ease-in-out;
+  perspective: 1500px;
+}
+
+.card-container:hover {
+  perspective: 1000px;
+}
+
+.card {
+  position: absolute;
+  width: 300px;
+  height: 280px;
+  background-color: #232423;
+  border-radius: 48px;
+  border: 2px solid #434443;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 2px 2px 12px #1a1919,
+    inset -2px -2px 6px #232423,
+    0 20px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  animation: float 6s linear infinite;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+}
+
+.main_card {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .main_card {
+  transform: translateZ(20px);
+}
+
+.glow {
+  position: absolute;
+  bottom: -40%;
+  left: -25%;
+  width: 100px;
+  height: 100px;
+  box-shadow:
+    0 0 200px #f6f4bb,
+    0 0 100px #ffffff,
+    300px -50px 100px #000,
+    -300px -50px 100px #222;
+  transition: all 0.5s ease-out;
+}
+
+.card:hover .glow1 {
+  filter: brightness(0.5);
+}
+
+.glow2 {
+  top: -25%;
+  left: 100%;
+}
+
+.card:hover .glow2 {
+  filter: brightness(2);
+  box-shadow:
+    0 0 400px #00ff62,
+    0 0 100px #06ff66,
+    300px -50px 0px #000,
+    -300px -50px 0px #222;
+}
+
+.main_card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #8d8e8d;
+  gap: 1rem;
+  transform-style: preserve-3d;
+}
+
+.battery {
+  color: #f6f6f6;
+  font-size: 48px;
+  font-family: Optima, sans-serif;
+  transform: translateZ(5px);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover .battery {
+  transform: translateZ(40px);
+  text-shadow: 0 0 10px rgba(246, 246, 246, 0.3);
+}
+
+.charging {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateZ(0);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover .charging {
+  transform: translateZ(30px);
+}
+
+.card:hover .charging svg {
+  filter: drop-shadow(0 0 3px rgba(141, 142, 141, 0.5));
+}
+
+.battery_health {
+  transform: translateZ(0);
+  transition: all 0.3s ease-out 0.05s;
+}
+
+.card:hover .battery_health {
+  transform: translateZ(25px);
+}
+
+.card:hover .battery_health svg {
+  filter: drop-shadow(0 0 2px rgba(141, 142, 141, 0.4));
+}
+
+.battery_bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  transform: translateZ(0);
+  transition: all 0.3s ease-out 0.1s;
+}
+
+.card:hover .battery_bar {
+  transform: translateZ(20px);
+}
+
+.bat_bar {
+  width: 60px;
+  height: 4px;
+  background: #06ff66;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover .bat_bar {
+  height: 5px;
+  filter: drop-shadow(0 0 4px rgba(6, 255, 102, 0.6));
+}
+
+.s_path {
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover + .s_path {
+  transform: translateZ(-50px) scale(1.03);
+}
+
+.s_path svg {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover + .s_path svg {
+  transform: rotate(60deg) scale(1.1);
+}
+
+.card:hover .bat_bar:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.card:hover .bat_bar:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card:hover .bat_bar:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+.card:hover .bat_bar:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+.card:hover .bat_bar:nth-child(5) {
+  transition-delay: 0.25s;
+}
+
+.card:hover .bat_bar:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (hover: hover) {
+  .card-container:hover .card {
+    transition: transform 0.2s ease;
+  }
+
+  .card-container:hover .card:hover {
+    transition: transform 0.3s ease;
+  }
+}
+
+""
+
+
+REACT CODE:
+
+""
+import React from 'react';
+import styled from 'styled-components';
+
+const Card = () => {
+  return (
+    <StyledWrapper>
+      <div className="card-container">
+        <div className="card">
+          <div className="main_card">
+            <div className="glow glow1" />
+            <div className="main_card-content">
+              <span className="battery">69%</span>
+              <p className="charging">
+                <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+                  <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+                  <g id="SVGRepo_iconCarrier">
+                    <title>flash_fill</title>
+                    <g id="页面-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
+                      <g id="Device" transform="translate(-336.000000, -48.000000)">
+                        <g id="flash_fill" transform="translate(336.000000, 48.000000)">
+                          <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fillRule="nonzero" />
+                          <path d="M13.2317,1.35987 C13.8635,0.601694 15.0952,1.11999 14.9948,2.10179 L14.2893,9.00005 L20,9.00005 C20.8478,9.00005 21.311,9.98891 20.7682,10.6402 L10.7682,22.6402 C10.1364,23.3984 8.90474,22.8801 9.00515,21.8983 L9.71065,15.0001 L3.99996,15.0001 C3.15212,15.0001 2.68896,14.0112 3.23174,13.3599 L13.2317,1.35987 Z" id="路径" fill="#8d8e8d" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                CHARGING
+              </p>
+              <div className="battery_health">
+                <p style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                  <svg fill="#8d8e8d" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 34 39.082" xmlSpace="preserve" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#8d8e8d" strokeWidth="0.00039081">
+                    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path d="M0.854,16.881C0.381,16.881,0,17.264,0,17.735v3.608c0,0.473,0.383,0.855,0.854,0.855c0.471,0,0.854-0.383,0.854-0.855v-3.608C1.708,17.264,1.325,16.881,0.854,16.881z" />
+                          <path d="M31,12.056H5.794c-1.992,0-3.615,1.622-3.615,3.615v7.738c0,1.992,1.623,3.615,3.615,3.615H31c1.994,0,3.615-1.623,3.615-3.615v-7.738C34.615,13.678,32.994,12.056,31,12.056z M31.8,23.41c0,0.43-0.351,0.779-0.781,0.779H5.794c-0.431,0-0.779-0.351-0.779-0.779v-7.738c0-0.43,0.351-0.78,0.779-0.78H31c0.433,0,0.781,0.351,0.781,0.78V23.41z" />
+                          <path d="M30.5,15.579H7.806c-0.365,0-0.664,0.298-0.664,0.665v6.593c0,0.367,0.299,0.664,0.664,0.664H30.5c0.366,0,0.666-0.297,0.666-0.664v-6.593C31.166,15.877,30.868,15.579,30.5,15.579z" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  96% BATTERY HEALTH
+                </p>
+                <p style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                  <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(90)" stroke="#8d8e8d">
+                    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M3.57996 5.15991H17.42C19.08 5.15991 20.42 6.49991 20.42 8.15991V11.4799" stroke="#8d8e8d" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M6.73996 2L3.57996 5.15997L6.73996 8.32001" stroke="#8d8e8d" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M20.42 18.84H6.57996C4.91996 18.84 3.57996 17.5 3.57996 15.84V12.52" stroke="#8d8e8d" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M17.26 21.9999L20.42 18.84L17.26 15.6799" stroke="#8d8e8d" strokeWidth="1.5" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+                  </svg>
+                  215 CYCLES
+                </p>
+              </div>
+              <div className="battery_bar">
+                <div className="bat_bar" style={{background: 'linear-gradient(90deg,transparent,#1e7344)'}} />
+                <div className="bat_bar" style={{background: 'linear-gradient(90deg,#1e7344,#1eaa44)'}} />
+                <div className="bat_bar" style={{background: 'linear-gradient(90deg,#1eaa44,#0fff66)'}} />
+                <div className="bat_bar" />
+                <div style={{background: 'linear-gradient(90deg,#3ae98a 15%,#414441 0)'}} className="bat_bar" />
+                <div style={{background: '#414441'}} className="bat_bar" />
+              </div>
+            </div>
+            <div className="glow glow2" />
+          </div>
+        </div>
+        <div className="s_path">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1226 1135" height={400} width={400}>
+            <path strokeWidth={30} stroke="url(#paint0_linear_29_11)" d="M1004.99 15.8218H220.014C106.92 15.8218 15.2388 121.677 15.2388 252.255V331.067C15.2388 461.645 106.92 567.5 220.014 567.5H1004.99C1118.08 567.5 1209.76 461.645 1209.76 331.067V252.255C1209.76 121.677 1118.08 15.8218 1004.99 15.8218Z" />
+            <path fill="white" d="M30 246.867C30 240.313 23.2843 235 15 235C6.71573 235 0 240.313 0 246.867V401.133C0 407.687 6.71573 413 15 413C23.2843 413 30 407.687 30 401.133V246.867Z" />
+            <path strokeWidth={30} stroke="url(#paint1_linear_29_11)" d="M1210.52 883.245C1210.52 1013.82 1118.84 1119.68 1005.75 1119.68H220.775C107.681 1119.68 16 1013.82 16 883.245V804.434C16 673.855 107.681 568 220.775 568H1210.52V883.245Z" />
+            <path fill="#222221" d="M1195 887.2C1195 893.717 1201.72 899 1210 899C1218.28 899 1225 893.717 1225 887.2V733.8C1225 727.283 1218.28 722 1210 722C1201.72 722 1195 727.283 1195 733.8V887.2Z" />
+            <path fill="#222221" d="M425 1104V1134H834V1104H425Z" />
+            <path fill="white" d="M304.667 1104C298.776 1104 294 1110.72 294 1119C294 1127.28 298.776 1134 304.667 1134H443.333C449.224 1134 454 1127.28 454 1119C454 1110.72 449.224 1104 443.333 1104H304.667Z" />
+            <path fill="white" d="M887.267 553C881.597 553 877 559.716 877 568C877 576.284 881.597 583 887.267 583H1020.73C1026.4 583 1031 576.284 1031 568C1031 559.716 1026.4 553 1020.73 553H887.267Z" />
+            <defs>
+              <linearGradient gradientUnits="userSpaceOnUse" y2="564.261" x2="604.083" y1="467.016" x1="641.51" id="paint0_linear_29_11">
+                <stop stopColor="white" offset="0.788547" />
+                <stop stopOpacity={0} stopColor="#181918" offset={1} />
+              </linearGradient>
+              <linearGradient gradientUnits="userSpaceOnUse" y2="923.443" x2="1066.13" y1="441.902" x1="700.291" id="paint1_linear_29_11">
+                <stop stopColor="white" offset="0.535865" />
+                <stop stopOpacity={0} stopColor="#181918" offset="0.556434" />
+                <stop stopOpacity={0} stopColor="#181918" offset="0.706811" />
+                <stop stopOpacity={0} stopColor="#181918" offset="0.817395" />
+                <stop stopOpacity={0} stopColor="#181918" offset="0.948396" />
+                <stop stopColor="#222221" offset={1} />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    transform: scale(0.7);
+    transition: all 0.3s ease-in-out;
+    perspective: 1500px;
+  }
+
+  .card-container:hover {
+    perspective: 1000px;
+  }
+
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    background-color: #232423;
+    border-radius: 48px;
+    border: 2px solid #434443;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+      inset 2px 2px 12px #1a1919,
+      inset -2px -2px 6px #232423,
+      0 20px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    animation: float 6s linear infinite;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+  }
+
+  .main_card {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover .main_card {
+    transform: translateZ(20px);
+  }
+
+  .glow {
+    position: absolute;
+    bottom: -40%;
+    left: -25%;
+    width: 100px;
+    height: 100px;
+    box-shadow:
+      0 0 200px #f6f4bb,
+      0 0 100px #ffffff,
+      300px -50px 100px #000,
+      -300px -50px 100px #222;
+    transition: all 0.5s ease-out;
+  }
+
+  .card:hover .glow1 {
+    filter: brightness(0.5);
+  }
+
+  .glow2 {
+    top: -25%;
+    left: 100%;
+  }
+
+  .card:hover .glow2 {
+    filter: brightness(2);
+    box-shadow:
+      0 0 400px #00ff62,
+      0 0 100px #06ff66,
+      300px -50px 0px #000,
+      -300px -50px 0px #222;
+  }
+
+  .main_card-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #8d8e8d;
+    gap: 1rem;
+    transform-style: preserve-3d;
+  }
+
+  .battery {
+    color: #f6f6f6;
+    font-size: 48px;
+    font-family: Optima, sans-serif;
+    transform: translateZ(5px);
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover .battery {
+    transform: translateZ(40px);
+    text-shadow: 0 0 10px rgba(246, 246, 246, 0.3);
+  }
+
+  .charging {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform: translateZ(0);
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover .charging {
+    transform: translateZ(30px);
+  }
+
+  .card:hover .charging svg {
+    filter: drop-shadow(0 0 3px rgba(141, 142, 141, 0.5));
+  }
+
+  .battery_health {
+    transform: translateZ(0);
+    transition: all 0.3s ease-out 0.05s;
+  }
+
+  .card:hover .battery_health {
+    transform: translateZ(25px);
+  }
+
+  .card:hover .battery_health svg {
+    filter: drop-shadow(0 0 2px rgba(141, 142, 141, 0.4));
+  }
+
+  .battery_bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    transform: translateZ(0);
+    transition: all 0.3s ease-out 0.1s;
+  }
+
+  .card:hover .battery_bar {
+    transform: translateZ(20px);
+  }
+
+  .bat_bar {
+    width: 60px;
+    height: 4px;
+    background: #06ff66;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+  }
+
+  .card:hover .bat_bar {
+    height: 5px;
+    filter: drop-shadow(0 0 4px rgba(6, 255, 102, 0.6));
+  }
+
+  .s_path {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-out;
+  }
+
+  .card:hover + .s_path {
+    transform: translateZ(-50px) scale(1.03);
+  }
+
+  .s_path svg {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out;
+  }
+
+  .card:hover + .s_path svg {
+    transform: rotate(60deg) scale(1.1);
+  }
+
+  .card:hover .bat_bar:nth-child(1) {
+    transition-delay: 0.05s;
+  }
+
+  .card:hover .bat_bar:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  .card:hover .bat_bar:nth-child(3) {
+    transition-delay: 0.15s;
+  }
+
+  .card:hover .bat_bar:nth-child(4) {
+    transition-delay: 0.2s;
+  }
+
+  .card:hover .bat_bar:nth-child(5) {
+    transition-delay: 0.25s;
+  }
+
+  .card:hover .bat_bar:nth-child(6) {
+    transition-delay: 0.3s;
+  }
+
+  @keyframes float {
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @media (hover: hover) {
+    .card-container:hover .card {
+      transition: transform 0.2s ease;
+    }
+
+    .card-container:hover .card:hover {
+      transition: transform 0.3s ease;
+    }
+  }`;
+
+export default Card;
+
+""

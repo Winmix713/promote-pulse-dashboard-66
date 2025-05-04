@@ -1,0 +1,1703 @@
+1:
+
+HTML CODE:
+
+""
+<!-- From Uiverse.io by AshtonLiou --> 
+<div class="battery-widget-container">
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="area"></div>
+  <div class="battery-widget">
+    <div class="battery-widget-body">
+      <p class="battery-level-text">
+        <span>
+          <span>0</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+        </span>
+        <span>
+          <span>0</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>0</span>
+        </span>
+        <span>%</span>
+      </p>
+      <div class="content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="var(--neutral-color)"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"
+          ></path>
+        </svg>
+        <p class="text">
+          <span style="--i: 0;">C</span>
+          <span style="--i: 1;">H</span>
+          <span style="--i: 2;">A</span>
+          <span style="--i: 3;">R</span>
+          <span style="--i: 4;">G</span>
+          <span style="--i: 5;">I</span>
+          <span style="--i: 6;">N</span>
+          <span style="--i: 7;">G</span>
+        </p>
+      </div>
+      <div class="content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="var(--neutral-color)"
+          viewBox="0 0 16 16"
+        >
+          <path d="M2 6h8v4H2z"></path>
+          <path
+            d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8"
+          ></path>
+        </svg>
+        <p class="text">
+          <span style="--i: 0;">9</span>
+          <span style="--i: 1;">6</span>
+          <span style="--i: 2; margin-right: 1ch;">%</span>
+          <span style="--i: 3;">B</span>
+          <span style="--i: 4;">A</span>
+          <span style="--i: 5;">T</span>
+          <span style="--i: 6;">T</span>
+          <span style="--i: 7;">E</span>
+          <span style="--i: 8;">R</span>
+          <span style="--i: 9; margin-right: 1ch;">Y</span>
+          <span style="--i: 10;">H</span>
+          <span style="--i: 11;">E</span>
+          <span style="--i: 12;">A</span>
+          <span style="--i: 13;">L</span>
+          <span style="--i: 14;">T</span>
+          <span style="--i: 15;">H</span>
+        </p>
+      </div>
+      <div class="content">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="var(--neutral-color)"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"
+          ></path>
+        </svg>
+        <p class="text">
+          <span style="--i: 0;">2</span>
+          <span style="--i: 1;">1</span>
+          <span style="--i: 2; margin-right: 1ch;">5</span>
+          <span style="--i: 3;">C</span>
+          <span style="--i: 4;">Y</span>
+          <span style="--i: 5;">C</span>
+          <span style="--i: 6;">L</span>
+          <span style="--i: 7;">E</span>
+          <span style="--i: 8;">S</span>
+        </p>
+      </div>
+      <div class="battery-level">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 1021 958"
+    height="240"
+    width="240"
+    class="battery-widget-level"
+  >
+    <path
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="10"
+      stroke="#212121"
+      d="M15.0393 329.175V230.175C13.5393 158.508 54.4393 15.1751 230.039 15.1751C405.639 15.1751 676.206 15.1751 789.539 15.1751C861.206 12.0085 1004.54 50.5751 1004.54 230.175C1004.54 409.775 1004.54 371.008 1004.54 329.175C1010.04 364.508 996.539 435.175 898.539 435.175C800.539 435.175 362.039 492.175 155.039 520.675C108.373 512.675 15.0393 529.475 15.0393 660.675C15.0393 700.675 15.0393 721.675 15.0393 727.175C14.8726 798.842 57.6393 942.175 230.039 942.175C402.439 942.175 674.873 942.175 789.539 942.175C861.206 947.175 1004.54 911.175 1004.54 727.175C1004.54 673.975 1004.54 640.675 1004.54 630.675"
+    ></path>
+    <path
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="10"
+      stroke="#fff"
+      d="M15.0393 329.175V230.175C13.5393 158.508 54.4393 15.1751 230.039 15.1751C405.639 15.1751 676.206 15.1751 789.539 15.1751C861.206 12.0085 1004.54 50.5751 1004.54 230.175C1004.54 409.775 1004.54 371.008 1004.54 329.175C1010.04 364.508 996.539 435.175 898.539 435.175C800.539 435.175 362.039 492.175 155.039 520.675C108.373 512.675 15.0393 529.475 15.0393 660.675C15.0393 700.675 15.0393 721.675 15.0393 727.175C14.8726 798.842 57.6393 942.175 230.039 942.175C402.439 942.175 674.873 942.175 789.539 942.175C861.206 947.175 1004.54 911.175 1004.54 727.175C1004.54 673.975 1004.54 640.675 1004.54 630.675"
+      pathLength="1"
+    ></path>
+  </svg>
+  <div class="wave"></div>
+</div>
+
+""
+
+CSS CODE
+
+""
+/* From Uiverse.io by AshtonLiou */ 
+.battery-widget-container {
+  --primary-color: #212121;
+  --neutral-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.area:hover ~ .battery-widget > .battery-widget-body {
+  & > .battery-level-text,
+  & > .content {
+    transform: translateZ(30px);
+  }
+}
+
+.area:nth-child(1):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(-15deg) rotateY(15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: -20%;
+      right: 70%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: 70%;
+    }
+  }
+}
+
+.area:nth-child(2):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(-15deg) rotateY(7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: -20%;
+      right: 47.5%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: 47.5%;
+    }
+  }
+}
+
+.area:nth-child(3):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(-15deg) rotateY(0);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: -20%;
+      right: 25%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: 25%;
+    }
+  }
+}
+
+.area:nth-child(4):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(-15deg) rotateY(-7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: -20%;
+      right: 2.5%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: 2.5%;
+    }
+  }
+}
+
+.area:nth-child(5):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(-15deg) rotateY(-15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: -20%;
+      right: -20%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: -20%;
+    }
+  }
+}
+
+.area:nth-child(6):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(0) rotateY(15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 22%;
+      right: 70%;
+    }
+
+    &::after {
+      bottom: 22%;
+      left: 70%;
+    }
+  }
+}
+
+.area:nth-child(7):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(0) rotateY(7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 22%;
+      right: 47.5%;
+    }
+
+    &::after {
+      bottom: 22%;
+      left: 47.5%;
+    }
+  }
+}
+
+.area:nth-child(8):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(0) rotateY(0);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 22%;
+      right: 25%;
+    }
+
+    &::after {
+      bottom: 22%;
+      left: 25%;
+    }
+  }
+}
+
+.area:nth-child(9):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(0) rotateY(-7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 22%;
+      right: 2.5%;
+    }
+
+    &::after {
+      bottom: 22%;
+      left: 2.5%;
+    }
+  }
+}
+
+.area:nth-child(10):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(0) rotateY(-15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 22%;
+      right: -20%;
+    }
+
+    &::after {
+      bottom: 22%;
+      left: -20%;
+    }
+  }
+}
+
+.area:nth-child(11):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(15deg) rotateY(15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 66%;
+      right: 70%;
+    }
+
+    &::after {
+      bottom: 66%;
+      left: 70%;
+    }
+  }
+}
+
+.area:nth-child(12):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(15deg) rotateY(7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 66%;
+      right: 47.5%;
+    }
+
+    &::after {
+      bottom: 66%;
+      left: 47.5%;
+    }
+  }
+}
+
+.area:nth-child(13):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(15deg) rotateY(0);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 66%;
+      right: 25%;
+    }
+
+    &::after {
+      bottom: 66%;
+      left: 25%;
+    }
+  }
+}
+
+.area:nth-child(14):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(15deg) rotateY(-7deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 66%;
+      right: 2.5%;
+    }
+
+    &::after {
+      bottom: 66%;
+      left: 2.5%;
+    }
+  }
+}
+
+.area:nth-child(15):hover {
+  & ~ .battery-widget-level,
+  & ~ .battery-widget,
+  & ~ .battery-widget > .battery-widget-body {
+    transform: rotateX(15deg) rotateY(-15deg);
+  }
+
+  & ~ .battery-widget {
+    &::before {
+      top: 66%;
+      right: -20%;
+    }
+
+    &::after {
+      bottom: 66%;
+      left: -20%;
+    }
+  }
+}
+
+.battery-widget-level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transition: all 0.2s ease-out;
+  translate: -50% -50%;
+
+  & > :last-child {
+    filter: blur(1px) drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
+      drop-shadow(0 0 5px #fff);
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: drawLine 1s 0.5s ease-in-out forwards;
+  }
+}
+
+.battery-widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 175px;
+  color: var(--neutral-color);
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  box-shadow:
+    0 0 10px 5px rgba(0, 0, 0, 0.1),
+    inset 0 0 2px 0.5px rgba(238, 238, 238, 0.5);
+  transition: all 0.2s ease-in-out;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  translate: -50% -50%;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--neutral-color);
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &::before {
+    top: -20%;
+    right: -20%;
+  }
+
+  &::after {
+    bottom: -20%;
+    left: -20%;
+  }
+
+  &:hover {
+    & > .battery-widget-body {
+      & .text > span {
+        animation: slide-scroll 0.5s calc(var(--i) * 0.02s) ease;
+      }
+    }
+
+    & ~ .battery-widget-level {
+      filter: blur(3px);
+      transform: scale(1.1);
+    }
+
+    & ~ .wave {
+      opacity: 1;
+      transition: all 1s ease-in-out;
+    }
+  }
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 200px;
+  height: 175px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--neutral-color);
+    box-shadow: 0 0 30px 0 var(--neutral-color);
+    border-radius: 50px;
+    filter: blur(3px);
+    opacity: 0;
+    animation: wave 3s linear infinite;
+  }
+
+  &::after {
+    animation-delay: 0.8s;
+  }
+}
+
+.battery-widget-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  inset: 1rem 1.5rem 1.5rem 1.5rem;
+  transform-style: preserve-3d;
+  transition: all 0.2s ease-in-out;
+}
+
+.battery-level-text {
+  display: flex;
+  font-size: 2em;
+  transform-style: preserve-3d;
+  transition: all 0.2s ease-in-out;
+
+  & > span {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 48px;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    overflow: hidden;
+
+    &:first-of-type > span {
+      animation: text-scroll-6 2s 0.1s cubic-bezier(0.5, 1.5, 0.6, 1) forwards;
+    }
+
+    &:nth-of-type(2) > span {
+      animation: text-scroll-9 2s 0.1s cubic-bezier(0.5, 1.5, 0.6, 1) forwards;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1ch;
+  font-size: 0.6em;
+  letter-spacing: -0.06rem;
+  opacity: 0.5;
+  transform-style: preserve-3d;
+  transition: all 0.2s ease-in-out;
+
+  &:first-of-type {
+    margin-bottom: 1em;
+  }
+}
+
+.text > span {
+  display: inline-block;
+  animation: slide-down 0.5s calc(var(--i) * 0.02s) ease;
+}
+
+.battery-level {
+  display: flex;
+  gap: 2.5px;
+  margin-top: 1rem;
+  width: 100%;
+  height: 2.5px;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1) 69%
+  );
+  transition: all 0.2s ease-in-out;
+
+  & > span {
+    position: relative;
+    flex: 1;
+    background-color: gray;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background-color: springgreen;
+      border-radius: 10px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      clip-path: inset(0 100% 0 0);
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    &:nth-child(1)::before {
+      animation: battery-level-100 0.1s 1s linear forwards;
+    }
+
+    &:nth-child(2)::before {
+      animation: battery-level-100 0.1s 1.1s linear forwards;
+    }
+
+    &:nth-child(3)::before {
+      animation: battery-level-100 0.1s 1.2s linear forwards;
+    }
+
+    &:nth-child(4)::before {
+      animation: battery-level-100 0.1s 1.3s linear forwards;
+    }
+
+    &:nth-child(5)::before {
+      animation: battery-level-14 0.1s 1.4s linear forwards;
+    }
+
+    &:nth-child(1)::after {
+      animation: battery-level-flash-100 2s 1s linear infinite;
+    }
+
+    &:nth-child(2)::after {
+      animation: battery-level-flash-100 2s 1.1s linear infinite;
+    }
+
+    &:nth-child(3)::after {
+      animation: battery-level-flash-100 2s 1.2s linear infinite;
+    }
+
+    &:nth-child(4)::after {
+      animation: battery-level-flash-100 2s 1.3s linear infinite;
+    }
+
+    &:nth-child(5)::after {
+      animation: battery-level-flash-14 2s 1.4s linear infinite;
+    }
+  }
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0.23;
+  }
+}
+
+@keyframes slide-scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  66% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    transform: scale(1.4);
+    opacity: 0.1;
+  }
+
+  70%,
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes text-scroll-6 {
+  to {
+    transform: translateY(-600%);
+  }
+}
+
+@keyframes text-scroll-9 {
+  to {
+    transform: translateY(-900%);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  66% {
+    opacity: 1;
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes battery-level-100 {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes battery-level-14 {
+  to {
+    width: 14%;
+  }
+}
+
+@keyframes battery-level-flash-100 {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  5% {
+    clip-path: inset(0 10% 0 10%);
+  }
+
+  10% {
+    clip-path: inset(0 0 0 100%);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes battery-level-flash-14 {
+  0% {
+    width: 14%;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  5% {
+    width: 14%;
+    clip-path: inset(0 10% 0 10%);
+  }
+
+  10% {
+    width: 14%;
+    clip-path: inset(0 0 0 100%);
+  }
+
+  100% {
+    width: 14%;
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+""
+
+
+REACT CODE:
+
+""
+import React from 'react';
+import styled from 'styled-components';
+
+const Card = () => {
+  return (
+    <StyledWrapper>
+      <div className="battery-widget-container">
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="area" />
+        <div className="battery-widget">
+          <div className="battery-widget-body">
+            <p className="battery-level-text">
+              <span>
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+              </span>
+              <span>
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>0</span>
+              </span>
+              <span>%</span>
+            </p>
+            <div className="content">
+              <svg xmlns="http://www.w3.org/2000/svg" width={15} height={15} fill="var(--neutral-color)" viewBox="0 0 16 16">
+                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+              </svg>
+              <p className="text">
+                <span style={{-i: 0}}>C</span>
+                <span style={{-i: 1}}>H</span>
+                <span style={{-i: 2}}>A</span>
+                <span style={{-i: 3}}>R</span>
+                <span style={{-i: 4}}>G</span>
+                <span style={{-i: 5}}>I</span>
+                <span style={{-i: 6}}>N</span>
+                <span style={{-i: 7}}>G</span>
+              </p>
+            </div>
+            <div className="content">
+              <svg xmlns="http://www.w3.org/2000/svg" width={15} height={15} fill="var(--neutral-color)" viewBox="0 0 16 16">
+                <path d="M2 6h8v4H2z" />
+                <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8" />
+              </svg>
+              <p className="text">
+                <span style={{-i: 0}}>9</span>
+                <span style={{-i: 1}}>6</span>
+                <span style={{-i: 2, marginRight: '1ch'}}>%</span>
+                <span style={{-i: 3}}>B</span>
+                <span style={{-i: 4}}>A</span>
+                <span style={{-i: 5}}>T</span>
+                <span style={{-i: 6}}>T</span>
+                <span style={{-i: 7}}>E</span>
+                <span style={{-i: 8}}>R</span>
+                <span style={{-i: 9, marginRight: '1ch'}}>Y</span>
+                <span style={{-i: 10}}>H</span>
+                <span style={{-i: 11}}>E</span>
+                <span style={{-i: 12}}>A</span>
+                <span style={{-i: 13}}>L</span>
+                <span style={{-i: 14}}>T</span>
+                <span style={{-i: 15}}>H</span>
+              </p>
+            </div>
+            <div className="content">
+              <svg xmlns="http://www.w3.org/2000/svg" width={15} height={15} fill="var(--neutral-color)" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                <path fillRule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+              </svg>
+              <p className="text">
+                <span style={{-i: 0}}>2</span>
+                <span style={{-i: 1}}>1</span>
+                <span style={{-i: 2, marginRight: '1ch'}}>5</span>
+                <span style={{-i: 3}}>C</span>
+                <span style={{-i: 4}}>Y</span>
+                <span style={{-i: 5}}>C</span>
+                <span style={{-i: 6}}>L</span>
+                <span style={{-i: 7}}>E</span>
+                <span style={{-i: 8}}>S</span>
+              </p>
+            </div>
+            <div className="battery-level">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1021 958" height={240} width={240} className="battery-widget-level">
+          <path strokeLinejoin="round" strokeLinecap="round" strokeWidth={10} stroke="#212121" d="M15.0393 329.175V230.175C13.5393 158.508 54.4393 15.1751 230.039 15.1751C405.639 15.1751 676.206 15.1751 789.539 15.1751C861.206 12.0085 1004.54 50.5751 1004.54 230.175C1004.54 409.775 1004.54 371.008 1004.54 329.175C1010.04 364.508 996.539 435.175 898.539 435.175C800.539 435.175 362.039 492.175 155.039 520.675C108.373 512.675 15.0393 529.475 15.0393 660.675C15.0393 700.675 15.0393 721.675 15.0393 727.175C14.8726 798.842 57.6393 942.175 230.039 942.175C402.439 942.175 674.873 942.175 789.539 942.175C861.206 947.175 1004.54 911.175 1004.54 727.175C1004.54 673.975 1004.54 640.675 1004.54 630.675" />
+          <path strokeLinejoin="round" strokeLinecap="round" strokeWidth={10} stroke="#fff" d="M15.0393 329.175V230.175C13.5393 158.508 54.4393 15.1751 230.039 15.1751C405.639 15.1751 676.206 15.1751 789.539 15.1751C861.206 12.0085 1004.54 50.5751 1004.54 230.175C1004.54 409.775 1004.54 371.008 1004.54 329.175C1010.04 364.508 996.539 435.175 898.539 435.175C800.539 435.175 362.039 492.175 155.039 520.675C108.373 512.675 15.0393 529.475 15.0393 660.675C15.0393 700.675 15.0393 721.675 15.0393 727.175C14.8726 798.842 57.6393 942.175 230.039 942.175C402.439 942.175 674.873 942.175 789.539 942.175C861.206 947.175 1004.54 911.175 1004.54 727.175C1004.54 673.975 1004.54 640.675 1004.54 630.675" pathLength={1} />
+        </svg>
+        <div className="wave" />
+      </div>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .battery-widget-container {
+    --primary-color: #212121;
+    --neutral-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+
+  .area:hover ~ .battery-widget > .battery-widget-body {
+    & > .battery-level-text,
+    & > .content {
+      transform: translateZ(30px);
+    }
+  }
+
+  .area:nth-child(1):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(-15deg) rotateY(15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: -20%;
+        right: 70%;
+      }
+
+      &::after {
+        bottom: -20%;
+        left: 70%;
+      }
+    }
+  }
+
+  .area:nth-child(2):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(-15deg) rotateY(7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: -20%;
+        right: 47.5%;
+      }
+
+      &::after {
+        bottom: -20%;
+        left: 47.5%;
+      }
+    }
+  }
+
+  .area:nth-child(3):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(-15deg) rotateY(0);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: -20%;
+        right: 25%;
+      }
+
+      &::after {
+        bottom: -20%;
+        left: 25%;
+      }
+    }
+  }
+
+  .area:nth-child(4):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(-15deg) rotateY(-7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: -20%;
+        right: 2.5%;
+      }
+
+      &::after {
+        bottom: -20%;
+        left: 2.5%;
+      }
+    }
+  }
+
+  .area:nth-child(5):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(-15deg) rotateY(-15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: -20%;
+        right: -20%;
+      }
+
+      &::after {
+        bottom: -20%;
+        left: -20%;
+      }
+    }
+  }
+
+  .area:nth-child(6):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(0) rotateY(15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 22%;
+        right: 70%;
+      }
+
+      &::after {
+        bottom: 22%;
+        left: 70%;
+      }
+    }
+  }
+
+  .area:nth-child(7):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(0) rotateY(7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 22%;
+        right: 47.5%;
+      }
+
+      &::after {
+        bottom: 22%;
+        left: 47.5%;
+      }
+    }
+  }
+
+  .area:nth-child(8):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(0) rotateY(0);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 22%;
+        right: 25%;
+      }
+
+      &::after {
+        bottom: 22%;
+        left: 25%;
+      }
+    }
+  }
+
+  .area:nth-child(9):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(0) rotateY(-7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 22%;
+        right: 2.5%;
+      }
+
+      &::after {
+        bottom: 22%;
+        left: 2.5%;
+      }
+    }
+  }
+
+  .area:nth-child(10):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(0) rotateY(-15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 22%;
+        right: -20%;
+      }
+
+      &::after {
+        bottom: 22%;
+        left: -20%;
+      }
+    }
+  }
+
+  .area:nth-child(11):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(15deg) rotateY(15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 66%;
+        right: 70%;
+      }
+
+      &::after {
+        bottom: 66%;
+        left: 70%;
+      }
+    }
+  }
+
+  .area:nth-child(12):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(15deg) rotateY(7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 66%;
+        right: 47.5%;
+      }
+
+      &::after {
+        bottom: 66%;
+        left: 47.5%;
+      }
+    }
+  }
+
+  .area:nth-child(13):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(15deg) rotateY(0);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 66%;
+        right: 25%;
+      }
+
+      &::after {
+        bottom: 66%;
+        left: 25%;
+      }
+    }
+  }
+
+  .area:nth-child(14):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(15deg) rotateY(-7deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 66%;
+        right: 2.5%;
+      }
+
+      &::after {
+        bottom: 66%;
+        left: 2.5%;
+      }
+    }
+  }
+
+  .area:nth-child(15):hover {
+    & ~ .battery-widget-level,
+    & ~ .battery-widget,
+    & ~ .battery-widget > .battery-widget-body {
+      transform: rotateX(15deg) rotateY(-15deg);
+    }
+
+    & ~ .battery-widget {
+      &::before {
+        top: 66%;
+        right: -20%;
+      }
+
+      &::after {
+        bottom: 66%;
+        left: -20%;
+      }
+    }
+  }
+
+  .battery-widget-level {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transition: all 0.2s ease-out;
+    translate: -50% -50%;
+
+    & > :last-child {
+      filter: blur(1px) drop-shadow(0 0 1px #fff) drop-shadow(0 0 3px #fff)
+        drop-shadow(0 0 5px #fff);
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: drawLine 1s 0.5s ease-in-out forwards;
+    }
+  }
+
+  .battery-widget {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 175px;
+    color: var(--neutral-color);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    box-shadow:
+      0 0 10px 5px rgba(0, 0, 0, 0.1),
+      inset 0 0 2px 0.5px rgba(238, 238, 238, 0.5);
+    transition: all 0.2s ease-in-out;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    translate: -50% -50%;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      aspect-ratio: 1 / 1;
+      background-color: var(--neutral-color);
+      border-radius: 50%;
+      filter: blur(40px);
+      opacity: 0.3;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &::before {
+      top: -20%;
+      right: -20%;
+    }
+
+    &::after {
+      bottom: -20%;
+      left: -20%;
+    }
+
+    &:hover {
+      & > .battery-widget-body {
+        & .text > span {
+          animation: slide-scroll 0.5s calc(var(--i) * 0.02s) ease;
+        }
+      }
+
+      & ~ .battery-widget-level {
+        filter: blur(3px);
+        transform: scale(1.1);
+      }
+
+      & ~ .wave {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+
+  .wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 200px;
+    height: 175px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -2;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--neutral-color);
+      box-shadow: 0 0 30px 0 var(--neutral-color);
+      border-radius: 50px;
+      filter: blur(3px);
+      opacity: 0;
+      animation: wave 3s linear infinite;
+    }
+
+    &::after {
+      animation-delay: 0.8s;
+    }
+  }
+
+  .battery-widget-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    inset: 1rem 1.5rem 1.5rem 1.5rem;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .battery-level-text {
+    display: flex;
+    font-size: 2em;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-in-out;
+
+    & > span {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 48px;
+      mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      overflow: hidden;
+
+      &:first-of-type > span {
+        animation: text-scroll-6 2s 0.1s cubic-bezier(0.5, 1.5, 0.6, 1) forwards;
+      }
+
+      &:nth-of-type(2) > span {
+        animation: text-scroll-9 2s 0.1s cubic-bezier(0.5, 1.5, 0.6, 1) forwards;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1ch;
+    font-size: 0.6em;
+    letter-spacing: -0.06rem;
+    opacity: 0.5;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-in-out;
+
+    &:first-of-type {
+      margin-bottom: 1em;
+    }
+  }
+
+  .text > span {
+    display: inline-block;
+    animation: slide-down 0.5s calc(var(--i) * 0.02s) ease;
+  }
+
+  .battery-level {
+    display: flex;
+    gap: 2.5px;
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5px;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 1) 69%
+    );
+    transition: all 0.2s ease-in-out;
+
+    & > span {
+      position: relative;
+      flex: 1;
+      background-color: gray;
+      border-radius: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: springgreen;
+        border-radius: 10px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        clip-path: inset(0 100% 0 0);
+        background-color: #fff;
+        border-radius: 10px;
+      }
+
+      &:nth-child(1)::before {
+        animation: battery-level-100 0.1s 1s linear forwards;
+      }
+
+      &:nth-child(2)::before {
+        animation: battery-level-100 0.1s 1.1s linear forwards;
+      }
+
+      &:nth-child(3)::before {
+        animation: battery-level-100 0.1s 1.2s linear forwards;
+      }
+
+      &:nth-child(4)::before {
+        animation: battery-level-100 0.1s 1.3s linear forwards;
+      }
+
+      &:nth-child(5)::before {
+        animation: battery-level-14 0.1s 1.4s linear forwards;
+      }
+
+      &:nth-child(1)::after {
+        animation: battery-level-flash-100 2s 1s linear infinite;
+      }
+
+      &:nth-child(2)::after {
+        animation: battery-level-flash-100 2s 1.1s linear infinite;
+      }
+
+      &:nth-child(3)::after {
+        animation: battery-level-flash-100 2s 1.2s linear infinite;
+      }
+
+      &:nth-child(4)::after {
+        animation: battery-level-flash-100 2s 1.3s linear infinite;
+      }
+
+      &:nth-child(5)::after {
+        animation: battery-level-flash-14 2s 1.4s linear infinite;
+      }
+    }
+  }
+
+  @keyframes drawLine {
+    to {
+      stroke-dashoffset: 0.23;
+    }
+  }
+
+  @keyframes slide-scroll {
+    0% {
+      transform: translateY(0);
+    }
+
+    33% {
+      opacity: 0;
+      transform: translateY(-1rem);
+    }
+
+    66% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+
+    30% {
+      transform: scale(1.4);
+      opacity: 0.1;
+    }
+
+    70%,
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  @keyframes text-scroll-6 {
+    to {
+      transform: translateY(-600%);
+    }
+  }
+
+  @keyframes text-scroll-9 {
+    to {
+      transform: translateY(-900%);
+    }
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform: translateY(0);
+    }
+
+    33% {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+
+    66% {
+      opacity: 1;
+      transform: translateY(-0.5rem);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes battery-level-100 {
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes battery-level-14 {
+    to {
+      width: 14%;
+    }
+  }
+
+  @keyframes battery-level-flash-100 {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+
+    5% {
+      clip-path: inset(0 10% 0 10%);
+    }
+
+    10% {
+      clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+
+  @keyframes battery-level-flash-14 {
+    0% {
+      width: 14%;
+      clip-path: inset(0 100% 0 0);
+    }
+
+    5% {
+      width: 14%;
+      clip-path: inset(0 10% 0 10%);
+    }
+
+    10% {
+      width: 14%;
+      clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+      width: 14%;
+      clip-path: inset(0 0 0 100%);
+    }
+  }`;
+
+export default Card;
+""
