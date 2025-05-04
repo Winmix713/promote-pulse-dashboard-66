@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardBody, CardHeader } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Check, User, ShoppingCart, AlertTriangle, UserX } from "lucide-react";
 
@@ -70,13 +70,13 @@ export const ActivityTimeline = () => {
         </Button>
       </CardHeader>
       
-      <CardBody className="px-6 py-2">
+      <CardContent className="px-6 py-2">
         <div className="space-y-5">
           {activities.map((activity) => (
             <ActivityRow key={activity.id} activity={activity} />
           ))}
         </div>
-      </CardBody>
+      </CardContent>
     </Card>
   );
 };

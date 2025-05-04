@@ -45,7 +45,7 @@ export const SalesDistributionChart: React.FC = () => {
               ))}
             </Pie>
             <Tooltip
-              formatter={(value) => [`${value} (${((value / total) * 100).toFixed(1)}%)`, 'Sales']}
+              formatter={(value: number) => [`${value} (${((value / total) * 100).toFixed(1)}%)`, 'Sales']}
               contentStyle={{ 
                 backgroundColor: '#fff', 
                 border: 'none',

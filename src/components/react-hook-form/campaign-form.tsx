@@ -1,55 +1,55 @@
 
-import React from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { Card, CardBody, CardHeader, CardFooter } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import React from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 
-// Define the form schema with Zod
+// Define the form schema using Zod
 const formSchema = z.object({
-  title: z.string().min(5, 'Title must be at least 5 characters'),
-  description: z.string().min(10, 'Description must be at least 10 characters'),
-  platform: z.string().min(1, 'Please select a platform'),
-  budget: z.number().min(100, 'Budget must be at least $100'), // Changed from string to number
-  startDate: z.string().min(1, 'Please select a start date'),
-  endDate: z.string().min(1, 'Please select an end date'),
+  title: z.string().min(1, "Title is required"),
+  description: z.string().min(10, "Description must be at least 10 characters"),
+  budget: z.string().refine((val) => !isNaN(Number(val)), {
+    message: "Budget must be a number",
+  }),
+  startDate: z.string().min(1, "Start date is required"),
+  endDate: z.string().min(1, "End date is required"),
 });
 
+// Infer the type from the schema
 type FormValues = z.infer<typeof formSchema>;
 
-export const CampaignForm = () => {
+export const CampaignForm: React.FC = () => {
+  // Initialize the form
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      title: '',
-      description: '',
-      platform: '',
-      budget: 0, // Changed to number
-      startDate: '',
-      endDate: '',
+      title: "",
+      description: "",
+      budget: "",
+      startDate: "",
+      endDate: "",
     },
   });
 
+  // Form submission handler
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
-    // Handle form submission
-    alert('Form submitted successfully! Check the console for details.');
+    console.log("Form submitted:", data);
+    // Additional processing or API calls would go here
   };
 
   return (
     <Card>
       <CardHeader>
-        <h3 className="text-lg font-semibold">Create New Campaign</h3>
-        <p className="text-sm text-muted-foreground">Fill out the form to create a new marketing campaign</p>
+        <CardTitle>New Campaign</CardTitle>
       </CardHeader>
-      <CardBody>
+      <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
               name="title"
@@ -71,63 +71,36 @@ export const CampaignForm = () => {
                 <FormItem>
                   <FormLabel>Description</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Enter campaign description" {...field} />
+                    <Textarea
+                      placeholder="Enter campaign description"
+                      className="resize-none"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <FormField
-                control={form.control}
-                name="platform"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Platform</FormLabel>
-                    <Select 
-                      onValueChange={field.onChange} 
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select platform" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="facebook">Facebook</SelectItem>
-                        <SelectItem value="instagram">Instagram</SelectItem>
-                        <SelectItem value="twitter">Twitter</SelectItem>
-                        <SelectItem value="linkedin">LinkedIn</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+            <FormField
+              control={form.control}
+              name="budget"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Budget</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="text"
+                      placeholder="Enter campaign budget"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="budget"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Budget</FormLabel>
-                    <FormControl>
-                      <Input 
-                        type="number" 
-                        placeholder="Enter budget amount" 
-                        {...field} 
-                        onChange={(e) => field.onChange(Number(e.target.value))} // Convert string to number
-                      />
-                    </FormControl>
-                    <FormDescription>Minimum budget: $100</FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <FormField
                 control={form.control}
                 name="startDate"
@@ -157,12 +130,12 @@ export const CampaignForm = () => {
               />
             </div>
 
-            <div className="flex justify-end pt-4">
+            <div className="flex justify-end">
               <Button type="submit">Create Campaign</Button>
             </div>
           </form>
         </Form>
-      </CardBody>
+      </CardContent>
     </Card>
   );
 };

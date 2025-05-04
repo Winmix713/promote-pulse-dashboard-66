@@ -1,3 +1,4 @@
+
 // theme-context.tsx
 import React, {
   createContext,
@@ -8,12 +9,12 @@ import React, {
   useCallback
 } from 'react';
 
-type Theme = 'light' | 'dark';
-type ThemeSetting = Theme | 'system';
+type Theme = 'light' | 'dark' | 'system';
+type ThemeSetting = Theme;
 
 interface ThemeContextType {
-  theme: Theme;
-  resolvedTheme: Theme;
+  theme: ThemeSetting;
+  resolvedTheme: 'light' | 'dark';
   toggleTheme: () => void;
   setTheme: (theme: ThemeSetting) => void;
 }
@@ -22,7 +23,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const THEME_STORAGE_KEY = 'app-theme';
 
-const getSystemTheme = (): Theme =>
+const getSystemTheme = (): 'light' | 'dark' =>
   window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode; defaultTheme?: ThemeSetting }> = ({
@@ -38,9 +39,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode; defaultTheme?:
     return defaultTheme;
   });
 
-  const resolvedTheme: Theme = themeSetting === 'system' ? getSystemTheme() : themeSetting;
+  const resolvedTheme: 'light' | 'dark' = themeSetting === 'system' ? getSystemTheme() : themeSetting === 'dark' ? 'dark' : 'light';
 
-  const applyTheme = (theme: Theme) => {
+  const applyTheme = (theme: 'light' | 'dark') => {
     const root = document.documentElement;
     root.classList.remove('light', 'dark');
     root.classList.add(theme);

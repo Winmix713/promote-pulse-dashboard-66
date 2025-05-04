@@ -1,7 +1,7 @@
 
 import React from "react";
 import { ArrowDown, ArrowUp, Twitter, Facebook, Instagram, AtSign } from "lucide-react";
-import { Card, CardHeader, CardBody } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
 interface SocialIconProps {
   platform: string;
@@ -85,7 +85,7 @@ export const CampaignList: React.FC = () => {
       <CardHeader>
         <h3 className="text-lg font-semibold">Campaign Performance</h3>
       </CardHeader>
-      <CardBody>
+      <CardContent>
         <div className="grid grid-cols-4 gap-4 text-sm text-gray-500 pb-2">
           <div>Campaign</div>
           <div className="text-center">Likes</div>
@@ -125,7 +125,7 @@ export const CampaignList: React.FC = () => {
           rate={20.9}
           isPositive={true}
         />
-      </CardBody>
+      </CardContent>
     </Card>
   );
 };
