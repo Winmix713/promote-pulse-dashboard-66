@@ -73,9 +73,9 @@ const Index = () => {
                   <div className="pt-1">
                     <div className="flex mb-4 p-1.5 border border-gray-200 rounded-4xl bg-gray-50">
                       {/* Customers Card */}
-                      <div className="group flex-1 px-12 py-8 rounded-3xl cursor-pointer transition-all max-2xl:p-6 max-xl:pr-3 max-md:p-4 bg-white shadow-md">
-                        <div className="flex items-center gap-3 mb-2 text-base font-medium transition-colors group-hover:text-gray-900 max-md:mb-3 max-md:text-sm text-gray-900">
-                          <Users className="inline-flex size-6 transition-colors group-hover:text-gray-900 text-gray-900" />
+                      <div className="group flex-1 px-12 py-8 rounded-3xl cursor-pointer transition-all max-2xl:p-6 max-xl:pr-3 max-md:p-4">
+                        <div className="flex items-center gap-3 mb-2 text-base font-medium transition-colors group-hover:text-gray-900 max-md:mb-3 max-md:text-sm text-gray-500">
+                          <Users className="inline-flex size-6 transition-colors group-hover:text-gray-900 text-gray-500" />
                           <div>Customers</div>
                         </div>
                         <div className="flex items-center gap-4 max-md:flex-col max-md:items-stretch max-md:gap-1">
@@ -93,9 +93,9 @@ const Index = () => {
                       </div>
                       
                       {/* Balance Card */}
-                      <div className="group flex-1 px-12 py-8 rounded-3xl cursor-pointer transition-all max-2xl:p-6 max-xl:pr-3 max-md:p-4">
-                        <div className="flex items-center gap-3 mb-2 text-base font-medium transition-colors group-hover:text-gray-900 max-md:mb-3 max-md:text-sm text-gray-500">
-                          <Package className="inline-flex size-6 transition-colors group-hover:text-gray-900 text-gray-500" />
+                      <div className="group flex-1 px-12 py-8 rounded-3xl cursor-pointer transition-all max-2xl:p-6 max-xl:pr-3 max-md:p-4 bg-white shadow-md">
+                        <div className="flex items-center gap-3 mb-2 text-base font-medium transition-colors group-hover:text-gray-900 max-md:mb-3 max-md:text-sm text-gray-900">
+                          <Package className="inline-flex size-6 transition-colors group-hover:text-gray-900 text-gray-900" />
                           <div>Balance</div>
                         </div>
                         <div className="flex items-center gap-4 max-md:flex-col max-md:items-stretch max-md:gap-1">
