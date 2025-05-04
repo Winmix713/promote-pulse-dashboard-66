@@ -34,7 +34,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode; defaultTheme?:
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem(THEME_STORAGE_KEY) as ThemeSetting | null;
       if (stored) return stored;
-      if (defaultTheme === 'system') return getSystemTheme();
     }
     return defaultTheme;
   });

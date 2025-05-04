@@ -11,12 +11,12 @@ import OverviewPage from "./pages/dashboard/Overview";
 import AnalyticsPage from "./pages/dashboard/Analytics";
 import ReportsPage from "./pages/dashboard/Reports";
 import NotificationsPage from "./pages/dashboard/Notifications";
-import { ThemeProvider } from "./components/theme/ThemeProvider";
+import { ThemeProvider } from "./context/theme-context";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <ThemeProvider>
+  <ThemeProvider defaultTheme="system">
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
