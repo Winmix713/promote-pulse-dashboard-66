@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
       {/* Dashboard Header - Welcome Message */}
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-semibold">Welcome back, Admin</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">Welcome back, Admin</h2>
           <p className="text-muted-foreground">Here's what's happening with your store today.</p>
         </div>
         <div>
