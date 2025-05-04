@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, MoreHorizontal } from 'lucide-react';
 
 interface Product {
   id: string;
@@ -8,54 +8,59 @@ interface Product {
   price: number;
   status: 'active' | 'offline';
   image: string;
+  percentage: number;
 }
 
 const PopularProducts: React.FC = () => {
   const products: Product[] = [
     {
       id: '1',
-      name: 'Crypter - NFT UI Kit',
-      price: 3250.00,
+      name: 'Premium Headphones',
+      price: 299.99,
       status: 'active',
-      image: '/placeholder.svg'
+      image: '/placeholder.svg',
+      percentage: 24
     },
     {
       id: '2',
-      name: 'Bento Pro 2.0 Illustrations',
-      price: 7890.00,
+      name: 'Smart Watch',
+      price: 199.99,
       status: 'active',
-      image: '/placeholder.svg'
+      image: '/placeholder.svg',
+      percentage: 21
     },
     {
       id: '3',
-      name: 'Fleet - travel shopping kit',
-      price: 1500.00,
+      name: 'Wireless Earbuds',
+      price: 129.99,
       status: 'offline',
-      image: '/placeholder.svg'
+      image: '/placeholder.svg',
+      percentage: 18
     },
     {
       id: '4',
-      name: 'SimpleSocial UI Design Kit',
-      price: 9999.00,
+      name: 'Bluetooth Speaker',
+      price: 89.99,
       status: 'active',
-      image: '/placeholder.svg'
+      image: '/placeholder.svg',
+      percentage: 12
     },
     {
       id: '5',
-      name: 'SimpleSocial UI Design Kit',
-      price: 4750.00,
+      name: 'Power Bank',
+      price: 49.99,
       status: 'active',
-      image: '/placeholder.svg'
+      image: '/placeholder.svg',
+      percentage: 9
     }
   ];
 
   return (
     <div className="bg-card border rounded-lg shadow-sm p-5 h-full">
       <div className="flex items-center justify-between mb-5">
-        <h2 className="font-medium text-lg">Popular products</h2>
-        <button className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1 transition-colors">
-          All products
-          <ChevronRight className="h-4 w-4" />
+        <h2 className="font-medium text-lg">Top Products</h2>
+        <button className="h-8 w-8 flex items-center justify-center rounded-full hover:bg-muted transition-colors">
+          <MoreHorizontal className="h-5 w-5 text-muted-foreground" />
         </button>
       </div>
       
@@ -71,15 +76,13 @@ const PopularProducts: React.FC = () => {
             </div>
             <div className="flex-grow mr-2">
               <h3 className="font-medium text-sm">{product.name}</h3>
-              <span className={`text-xs ${product.status === 'active' 
-                ? 'text-green-500 dark:text-green-400' 
-                : 'text-red-500 dark:text-red-400'}`}
-              >
-                {product.status === 'active' ? 'Active' : 'Offline'}
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium">${product.price.toFixed(2)}</span>
+                <span className="text-xs text-muted-foreground">{Math.floor(Math.random() * 300) + 100} sales</span>
+              </div>
             </div>
-            <div className="text-right">
-              <p className="font-medium">${product.price.toLocaleString()}</p>
+            <div className="text-right font-medium">
+              {product.percentage}%
             </div>
           </div>
         ))}

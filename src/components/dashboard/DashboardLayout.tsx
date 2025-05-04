@@ -2,12 +2,16 @@
 import React from "react";
 import Sidebar from "@/components/promote/Sidebar";
 import Header from "@/components/dashboard/Header";
+import SettingsDialog from "@/components/dashboard/SettingsDialog";
+import { useSettingsDialog } from "@/hooks/useSettingsDialog";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
 }
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
+  const { isOpen, onOpenChange } = useSettingsDialog();
+  
   return (
     <div className="flex min-h-screen bg-background">
       {/* Sidebar */}
@@ -23,6 +27,9 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
           {children}
         </main>
       </div>
+      
+      {/* Settings Dialog */}
+      <SettingsDialog open={isOpen} onOpenChange={onOpenChange} />
     </div>
   );
 };

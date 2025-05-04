@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,6 +42,19 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Additional colors from the design */
+    --color-primary-50: #e6f7ef;
+    --color-primary-100: #ccf0df;
+    --color-primary-200: #99e0bf;
+    --color-primary-300: #66d19f;
+    --color-primary-400: #33c17f;
+    --color-primary-500: #00a656;
+    --color-primary-600: #00964d;
+    --color-primary-700: #007a3f;
+    --color-primary-800: #005d2f;
+    --color-primary-900: #003f20;
+    --color-primary-950: #002010;
   }
 
   .dark {
@@ -123,5 +135,27 @@
   @keyframes slideIn {
     from { transform: translateY(10px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* Badge animations */
+  .badge-up {
+    @apply text-green-600 bg-green-50 dark:text-green-400 dark:bg-green-900/30;
+  }
+  
+  .badge-down {
+    @apply text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/30;
+  }
+
+  /* Chart styling */
+  .chart-line-blue {
+    stroke: var(--color-primary-400);
+    stroke-width: 3;
+    fill: none;
+  }
+
+  .chart-line-gray {
+    stroke: var(--color-gray-300);
+    stroke-width: 2;
+    fill: none;
   }
 }
