@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { ChevronRight } from 'lucide-react';
 
 interface Product {
   id: string;
@@ -50,21 +50,31 @@ const PopularProducts: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white border rounded-lg shadow-sm p-5">
-      <h2 className="font-medium text-lg mb-4">Popular products</h2>
+    <div className="bg-card border rounded-lg shadow-sm p-5 h-full">
+      <div className="flex items-center justify-between mb-5">
+        <h2 className="font-medium text-lg">Popular products</h2>
+        <button className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1 transition-colors">
+          All products
+          <ChevronRight className="h-4 w-4" />
+        </button>
+      </div>
+      
       <div className="space-y-4">
         {products.map((product) => (
-          <div key={product.id} className="flex items-center">
-            <div className="h-12 w-12 rounded-lg bg-gray-100 overflow-hidden mr-3">
+          <div key={product.id} className="flex items-center py-2 hover:bg-muted/50 rounded-md px-1 transition-colors">
+            <div className="h-12 w-12 rounded-lg bg-muted overflow-hidden mr-3">
               <img 
                 src={product.image} 
                 alt={product.name} 
                 className="w-full h-full object-cover" 
               />
             </div>
-            <div className="flex-grow">
-              <h3 className="font-medium">{product.name}</h3>
-              <span className={`text-xs ${product.status === 'active' ? 'text-green-500' : 'text-red-500'}`}>
+            <div className="flex-grow mr-2">
+              <h3 className="font-medium text-sm">{product.name}</h3>
+              <span className={`text-xs ${product.status === 'active' 
+                ? 'text-green-500 dark:text-green-400' 
+                : 'text-red-500 dark:text-red-400'}`}
+              >
                 {product.status === 'active' ? 'Active' : 'Offline'}
               </span>
             </div>
@@ -73,11 +83,6 @@ const PopularProducts: React.FC = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="mt-6">
-        <a href="/products" className="text-sm text-gray-500 hover:text-gray-900">
-          All products
-        </a>
       </div>
     </div>
   );
