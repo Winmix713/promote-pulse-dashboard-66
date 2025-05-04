@@ -39,44 +39,39 @@ const DashboardPage: React.FC = () => {
         {/* Dashboard Tabs */}
         <div>
           <div className="flex items-center justify-between mb-6">
-            <TabsList className="bg-muted/50">
-              <TabsTrigger 
-                value="overview" 
-                className="flex items-center gap-2"
-                onClick={() => handleTabChange('overview')}
-                data-state={currentTab === 'overview' ? 'active' : 'inactive'}
-              >
-                <Home className="h-4 w-4" />
-                <span>Overview</span>
-              </TabsTrigger>
-              <TabsTrigger 
-                value="analytics" 
-                className="flex items-center gap-2"
-                onClick={() => handleTabChange('analytics')}
-                data-state={currentTab === 'analytics' ? 'active' : 'inactive'}
-              >
-                <BarChart3 className="h-4 w-4" />
-                <span>Analytics</span>
-              </TabsTrigger>
-              <TabsTrigger 
-                value="reports" 
-                className="flex items-center gap-2"
-                onClick={() => handleTabChange('reports')}
-                data-state={currentTab === 'reports' ? 'active' : 'inactive'}
-              >
-                <FileText className="h-4 w-4" />
-                <span>Reports</span>
-              </TabsTrigger>
-              <TabsTrigger 
-                value="notifications" 
-                className="flex items-center gap-2"
-                onClick={() => handleTabChange('notifications')}
-                data-state={currentTab === 'notifications' ? 'active' : 'inactive'}
-              >
-                <BellRing className="h-4 w-4" />
-                <span>Notifications</span>
-              </TabsTrigger>
-            </TabsList>
+            {/* Fix: Wrap TabsList in Tabs component */}
+            <Tabs value={currentTab} onValueChange={handleTabChange}>
+              <TabsList className="bg-muted/50">
+                <TabsTrigger 
+                  value="overview" 
+                  className="flex items-center gap-2"
+                >
+                  <Home className="h-4 w-4" />
+                  <span>Overview</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="analytics" 
+                  className="flex items-center gap-2"
+                >
+                  <BarChart3 className="h-4 w-4" />
+                  <span>Analytics</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="reports" 
+                  className="flex items-center gap-2"
+                >
+                  <FileText className="h-4 w-4" />
+                  <span>Reports</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="notifications" 
+                  className="flex items-center gap-2"
+                >
+                  <BellRing className="h-4 w-4" />
+                  <span>Notifications</span>
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
 
             <div className="flex gap-2">
               <Button variant="outline" size="sm" className="text-sm flex items-center gap-2">
