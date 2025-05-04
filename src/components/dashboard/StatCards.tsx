@@ -1,46 +1,42 @@
 
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { DollarSign, Users, ShoppingBag, Activity, TrendingUp, TrendingDown } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { DollarSign, Users, ShoppingBag, Activity, ArrowUpRight, ArrowDownRight } from "lucide-react";
 
 export const StatCards: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <StatCard
         title="Total Revenue"
         value="$45,231.89"
         change={20.1}
         isPositive={true}
-        subtitle="from last month"
-        icon={<DollarSign className="h-5 w-5" />}
-        color="primary"
+        icon={<DollarSign className="h-4 w-4" />}
+        color="blue"
       />
       <StatCard
-        title="New Customers"
-        value="1,293"
-        change={-36.8}
-        isPositive={false}
-        subtitle="from last month"
-        icon={<Users className="h-5 w-5" />}
-        color="success"
+        title="Subscriptions"
+        value="2,350"
+        change={10.5}
+        isPositive={true}
+        icon={<Users className="h-4 w-4" />}
+        color="green"
       />
       <StatCard
         title="Sales"
         value="12,234"
-        change={10.3}
-        isPositive={true}
-        subtitle="from last month"
-        icon={<ShoppingBag className="h-5 w-5" />}
-        color="warning"
+        change={-5.2}
+        isPositive={false}
+        icon={<ShoppingBag className="h-4 w-4" />}
+        color="orange"
       />
       <StatCard
-        title="Active Users"
+        title="Active Now"
         value="573"
         change={8.4}
         isPositive={true}
-        subtitle="from last month"
-        icon={<Activity className="h-5 w-5" />}
-        color="danger"
+        icon={<Activity className="h-4 w-4" />}
+        color="purple"
       />
     </div>
   );
@@ -51,9 +47,8 @@ interface StatCardProps {
   value: string;
   change: number;
   isPositive: boolean;
-  subtitle: string;
   icon: React.ReactNode;
-  color: "primary" | "success" | "warning" | "danger";
+  color: "blue" | "green" | "orange" | "purple";
 }
 
 const StatCard: React.FC<StatCardProps> = ({
@@ -61,38 +56,44 @@ const StatCard: React.FC<StatCardProps> = ({
   value,
   change,
   isPositive,
-  subtitle,
   icon,
   color
 }) => {
-  const getColorClass = () => {
+  const getBgColor = () => {
     switch (color) {
-      case "primary": return "bg-blue-50 text-blue-500 dark:bg-blue-900/20 dark:text-blue-400";
-      case "success": return "bg-green-50 text-green-500 dark:bg-green-900/20 dark:text-green-400";
-      case "warning": return "bg-amber-50 text-amber-500 dark:bg-amber-900/20 dark:text-amber-400";
-      case "danger": return "bg-red-50 text-red-500 dark:bg-red-900/20 dark:text-red-400";
-      default: return "bg-blue-50 text-blue-500 dark:bg-blue-900/20 dark:text-blue-400";
+      case "blue": return "bg-blue-500/10 text-blue-500";
+      case "green": return "bg-emerald-500/10 text-emerald-500";
+      case "orange": return "bg-amber-500/10 text-amber-500";
+      case "purple": return "bg-violet-500/10 text-violet-500";
+      default: return "bg-blue-500/10 text-blue-500";
     }
   };
 
   return (
-    <Card className="border shadow-sm">
+    <Card>
       <CardContent className="p-6">
-        <div className="flex items-start justify-between mb-4">
-          <p className="text-sm font-medium text-muted-foreground">{title}</p>
-          <div className={`rounded-full p-2.5 ${getColorClass()}`}>
+        <div className="flex justify-between">
+          <div>
+            <p className="text-sm text-muted-foreground">{title}</p>
+            <h3 className="text-2xl font-bold mt-1">{value}</h3>
+            <div className="flex items-center mt-1 text-xs">
+              {isPositive ? (
+                <div className="flex text-emerald-600">
+                  <ArrowUpRight className="h-3 w-3 mr-1" />
+                  {change}%
+                </div>
+              ) : (
+                <div className="flex text-rose-600">
+                  <ArrowDownRight className="h-3 w-3 mr-1" />
+                  {Math.abs(change)}%
+                </div>
+              )}
+              <span className="text-muted-foreground ml-1">from last month</span>
+            </div>
+          </div>
+          <div className={`rounded-full p-2 ${getBgColor()}`}>
             {icon}
           </div>
-        </div>
-        
-        <div className="text-2xl font-bold mb-2">{value}</div>
-        
-        <div className="flex items-center gap-1.5">
-          <div className={`flex items-center gap-1 text-xs font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}>
-            {isPositive ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
-            <span>{Math.abs(change)}%</span>
-          </div>
-          <div className="text-xs text-muted-foreground">{subtitle}</div>
         </div>
       </CardContent>
     </Card>

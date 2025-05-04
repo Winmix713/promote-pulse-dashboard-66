@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { Info } from "lucide-react";
 
 // Sample data for the pie chart
@@ -17,11 +17,11 @@ const total = salesData.reduce((sum, item) => sum + item.value, 0);
 
 export const SalesDistributionChart: React.FC = () => {
   return (
-    <Card className="border shadow-sm">
-      <CardHeader className="flex flex-row items-center justify-between">
+    <Card className="overflow-hidden">
+      <CardHeader className="flex flex-row items-center justify-between pb-3">
         <div>
-          <CardTitle className="text-lg font-medium">Sales Distribution</CardTitle>
-          <p className="text-sm text-muted-foreground">By product category</p>
+          <p className="text-sm text-muted-foreground">Sales by Category</p>
+          <CardTitle className="text-2xl font-bold">$23,020.85</CardTitle>
         </div>
         <Info className="h-4 w-4 text-muted-foreground" />
       </CardHeader>
@@ -37,8 +37,8 @@ export const SalesDistributionChart: React.FC = () => {
               outerRadius={100}
               paddingAngle={3}
               dataKey="value"
-              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(1)}%`}
               labelLine={false}
+              label={({ name, percent }) => `${name} ${(percent * 100).toFixed(1)}%`}
             >
               {salesData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.color} />
@@ -47,18 +47,12 @@ export const SalesDistributionChart: React.FC = () => {
             <Tooltip
               formatter={(value: number) => [`${value} (${((value / total) * 100).toFixed(1)}%)`, 'Sales']}
               contentStyle={{ 
-                backgroundColor: '#fff', 
-                border: 'none',
+                backgroundColor: 'var(--card)', 
+                border: '1px solid var(--border)',
                 borderRadius: '8px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                 padding: '8px 12px'
               }}
-            />
-            <Legend
-              layout="horizontal"
-              verticalAlign="bottom"
-              align="center"
-              wrapperStyle={{ paddingTop: "20px" }}
             />
           </PieChart>
         </ResponsiveContainer>

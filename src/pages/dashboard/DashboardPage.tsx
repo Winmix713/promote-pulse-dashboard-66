@@ -2,10 +2,11 @@
 import React from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BarChart3, FileText, Home, BellRing, Download, Settings } from "lucide-react";
+import { BarChart3, FileText, Home, BellRing, Download, Settings, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSettingsDialog } from "@/hooks/useSettingsDialog";
 import DashboardLayout from "@/components/dashboard/DashboardLayout";
+import { Input } from "@/components/ui/input";
 
 const DashboardPage: React.FC = () => {
   const { open: openSettings } = useSettingsDialog();
@@ -23,71 +24,63 @@ const DashboardPage: React.FC = () => {
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        {/* Dashboard Header - Welcome Message */}
-        <div className="flex justify-between items-center">
+        {/* Dashboard Header - Welcome Message and Search */}
+        <div className="flex flex-col lg:flex-row gap-4 justify-between items-start lg:items-center mb-2">
           <div>
-            <h2 className="text-2xl font-semibold tracking-tight">Welcome back, Admin</h2>
-            <p className="text-muted-foreground">Here's what's happening with your store today.</p>
+            <h2 className="text-2xl font-semibold tracking-tight">Dashboard</h2>
+            <p className="text-muted-foreground">Welcome back! Here's what's happening with your store today.</p>
           </div>
-          <div>
-            <Button variant="outline" size="sm" className="flex items-center gap-2 px-3 py-1.5 text-sm">
-              <span>May 4, 2025</span>
+          <div className="flex items-center gap-2 w-full lg:w-auto">
+            <div className="relative flex-1 lg:flex-initial lg:w-64">
+              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input
+                placeholder="Search anything..."
+                className="pl-9 h-9 w-full lg:w-[14rem]"
+              />
+            </div>
+            <Button variant="outline" size="sm" className="h-9">
+              <Download className="h-4 w-4 mr-2" />
+              Export
             </Button>
           </div>
         </div>
 
         {/* Dashboard Tabs */}
         <div>
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-6 border-b">
             {/* Fix: Wrap TabsList in Tabs component */}
-            <Tabs value={currentTab} onValueChange={handleTabChange}>
-              <TabsList className="bg-muted/50">
+            <Tabs value={currentTab} onValueChange={handleTabChange} className="w-full">
+              <TabsList className="bg-transparent border-b-0 h-auto p-0">
                 <TabsTrigger 
                   value="overview" 
-                  className="flex items-center gap-2"
+                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:shadow-none rounded-none py-3 px-4 h-auto"
                 >
-                  <Home className="h-4 w-4" />
+                  <Home className="h-4 w-4 mr-2" />
                   <span>Overview</span>
                 </TabsTrigger>
                 <TabsTrigger 
                   value="analytics" 
-                  className="flex items-center gap-2"
+                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:shadow-none rounded-none py-3 px-4 h-auto"
                 >
-                  <BarChart3 className="h-4 w-4" />
+                  <BarChart3 className="h-4 w-4 mr-2" />
                   <span>Analytics</span>
                 </TabsTrigger>
                 <TabsTrigger 
                   value="reports" 
-                  className="flex items-center gap-2"
+                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:shadow-none rounded-none py-3 px-4 h-auto"
                 >
-                  <FileText className="h-4 w-4" />
+                  <FileText className="h-4 w-4 mr-2" />
                   <span>Reports</span>
                 </TabsTrigger>
                 <TabsTrigger 
                   value="notifications" 
-                  className="flex items-center gap-2"
+                  className="data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:shadow-none rounded-none py-3 px-4 h-auto"
                 >
-                  <BellRing className="h-4 w-4" />
+                  <BellRing className="h-4 w-4 mr-2" />
                   <span>Notifications</span>
                 </TabsTrigger>
               </TabsList>
             </Tabs>
-
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm" className="text-sm flex items-center gap-2">
-                <Download className="h-4 w-4" />
-                <span>Export</span>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="text-sm flex items-center gap-2"
-                onClick={openSettings}
-              >
-                <Settings className="h-4 w-4" />
-                <span>Settings</span>
-              </Button>
-            </div>
           </div>
 
           {/* Outlet for nested routes */}

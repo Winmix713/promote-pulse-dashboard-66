@@ -1,101 +1,92 @@
 
-import React from "react";
+import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-import { TrendingUp, ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { ArrowUpRight } from 'lucide-react';
 
-// Sample data for the revenue chart
 const data = [
-  { month: "Jan", revenue: 7.2 },
-  { month: "Feb", revenue: 5.3 },
-  { month: "Mar", revenue: 6.8 },
-  { month: "Apr", revenue: 8.9 },
-  { month: "May", revenue: 7.6 },
-  { month: "Jun", revenue: 10.2, isHighlighted: true },
-  { month: "Jul", revenue: 6.5 },
-  { month: "Aug", revenue: 7.8 },
-  { month: "Sep", revenue: 9.1 },
-  { month: "Oct", revenue: 8.3 },
-  { month: "Nov", revenue: 9.7 },
-  { month: "Dec", revenue: 12.4 }
+  { name: "Jan", revenue: 4000 },
+  { name: "Feb", revenue: 3000 },
+  { name: "Mar", revenue: 5000 },
+  { name: "Apr", revenue: 4000 },
+  { name: "May", revenue: 6000 },
+  { name: "Jun", revenue: 5500 },
+  { name: "Jul", revenue: 7000 },
+  { name: "Aug", revenue: 8000 },
+  { name: "Sep", revenue: 7500 },
+  { name: "Oct", revenue: 9000 },
+  { name: "Nov", revenue: 8500 },
+  { name: "Dec", revenue: 10000 },
 ];
 
-export const RevenueOverview: React.FC = () => {
+export const RevenueOverview = () => {
   return (
-    <Card className="border shadow-sm">
-      <CardHeader className="flex flex-row items-center justify-between">
-        <div>
-          <div className="flex items-center gap-2">
-            <CardTitle className="text-2xl font-bold">$256k</CardTitle>
-            <Badge variant="outline" className="bg-green-50 text-green-600 border-green-200 flex gap-1 items-center">
-              <TrendingUp className="w-3 h-3" />
-              <span>4.3%</span>
-            </Badge>
+    <Card className="overflow-hidden">
+      <CardHeader className="pb-3">
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="text-sm text-muted-foreground">Revenue</p>
+            <div className="flex items-center gap-2">
+              <CardTitle className="text-2xl font-bold">$45,231.89</CardTitle>
+              <div className="flex items-center text-xs font-medium text-emerald-600 bg-emerald-50 dark:bg-emerald-950/30 px-2 py-1 rounded-full">
+                <ArrowUpRight className="h-3 w-3 mr-1" />
+                20.1%
+              </div>
+            </div>
           </div>
-          <p className="text-sm text-muted-foreground">Monthly revenue</p>
+          <div className="flex gap-3">
+            <select className="bg-muted/60 text-sm border border-border rounded-md px-2 py-1">
+              <option value="year">Year</option>
+              <option value="month">Month</option>
+              <option value="week">Week</option>
+            </select>
+          </div>
         </div>
-        <Button 
-          variant="outline" 
-          size="sm"
-          className="gap-2"
-        >
-          This Year
-          <ChevronDown className="w-4 h-4" />
-        </Button>
       </CardHeader>
-      
-      <CardContent className="pt-0 px-2 pb-2 h-72">
+      <CardContent className="h-[300px]">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            data={data}
-            margin={{
-              top: 10,
-              right: 10,
-              left: 0,
-              bottom: 20,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f1f4" />
+          <LineChart data={data}>
             <XAxis 
-              dataKey="month" 
+              dataKey="name" 
+              stroke="#888888" 
+              fontSize={12} 
+              tickLine={false} 
               axisLine={false}
-              tickLine={false}
-              tick={{ fontSize: 12, fill: '#a1a1aa' }}
-              dy={10}
             />
             <YAxis
-              axisLine={false}
+              stroke="#888888"
+              fontSize={12}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#a1a1aa' }}
-              tickFormatter={(value) => `$${value}m`}
+              axisLine={false}
+              tickFormatter={(value) => `$${value}`}
             />
             <Tooltip
-              formatter={(value) => [`$${value}m`, 'Revenue']}
-              contentStyle={{ 
-                backgroundColor: '#fff', 
-                border: 'none',
+              formatter={(value: any) => [`$${value}`, 'Revenue']}
+              contentStyle={{
                 borderRadius: '8px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-                padding: '8px 12px'
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                border: '1px solid var(--border)',
+                background: 'var(--card)'
               }}
             />
-            {/* Regular bars for all months */}
-            <Bar 
+            <Line 
+              type="monotone" 
               dataKey="revenue" 
-              fill="#E0E0E0" 
-              radius={[4, 4, 0, 0]}
-              barSize={30}
+              stroke="#4f46e5" 
+              strokeWidth={2} 
+              dot={{
+                r: 0,
+                strokeWidth: 2,
+                fill: "#4f46e5"
+              }}
+              activeDot={{
+                r: 6,
+                stroke: "#4f46e5",
+                strokeWidth: 2,
+                fill: "var(--background)"
+              }}
             />
-            {/* Highlighted bar for June only */}
-            <Bar 
-              dataKey={(data) => data.isHighlighted ? data.revenue : 0}
-              fill="#00a656" 
-              radius={[4, 4, 0, 0]}
-              barSize={30}
-            />
-          </BarChart>
+          </LineChart>
         </ResponsiveContainer>
       </CardContent>
     </Card>
