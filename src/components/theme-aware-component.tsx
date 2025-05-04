@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { useTheme } from '../context/theme-context';
-import { Card, CardBody } from '@heroui/react';
+import { Card, CardBody } from "@/components/ui/card";
 
 interface ThemeAwareComponentProps {
   lightContent: React.ReactNode;
@@ -28,12 +29,3 @@ export const ThemeAwareComponent: React.FC<ThemeAwareComponentProps> = ({
     </Card>
   );
 };
-
-/**
- * Example usage:
- * 
- * <ThemeAwareComponent
- *   lightContent={<p>This is shown in light mode</p>}
- *   darkContent={<p>This is shown in dark mode</p>}
- * />
- */

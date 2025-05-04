@@ -1,10 +1,12 @@
+
 import React from 'react';
-import { Card, CardBody, CardHeader, Button } from '@heroui/react';
-import { Icon } from '@iconify/react';
+import { Card, CardBody, CardHeader } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Home, Check, User, ShoppingCart, AlertTriangle, UserX } from "lucide-react";
 
 interface ActivityItem {
   id: number;
-  icon: string;
+  icon: React.ReactNode;
   iconColor: 'success' | 'primary' | 'warning' | 'danger' | 'purple';
   title: string;
   description: string;
@@ -15,7 +17,7 @@ export const ActivityTimeline = () => {
   const activities: ActivityItem[] = [
     {
       id: 1,
-      icon: "lucide:check",
+      icon: <Check size={16} />,
       iconColor: "success",
       title: "Order #1234 was completed",
       description: "Customer: Sarah Johnson",
@@ -23,7 +25,7 @@ export const ActivityTimeline = () => {
     },
     {
       id: 2,
-      icon: "lucide:user",
+      icon: <User size={16} />,
       iconColor: "primary",
       title: "New customer registered",
       description: "User: michael@example.com",
@@ -31,7 +33,7 @@ export const ActivityTimeline = () => {
     },
     {
       id: 3,
-      icon: "lucide:shopping-cart",
+      icon: <ShoppingCart size={16} />,
       iconColor: "warning",
       title: "New order #4567 received",
       description: "$156.00 - 3 items",
@@ -39,7 +41,7 @@ export const ActivityTimeline = () => {
     },
     {
       id: 4,
-      icon: "lucide:alert-triangle",
+      icon: <AlertTriangle size={16} />,
       iconColor: "danger",
       title: "Inventory alert: Product #127",
       description: "Only 2 items left in stock",
@@ -47,7 +49,7 @@ export const ActivityTimeline = () => {
     },
     {
       id: 5,
-      icon: "lucide:user-x",
+      icon: <UserX size={16} />,
       iconColor: "purple",
       title: "Customer #245 requested a refund",
       description: "Order #1122 - $78.50",
@@ -56,19 +58,15 @@ export const ActivityTimeline = () => {
   ];
 
   return (
-    <Card className="border-none shadow-sm">
+    <Card>
       <CardHeader className="flex justify-between items-center px-6">
         <div>
           <h3 className="text-xl font-semibold">Recent Activity</h3>
-          <p className="text-sm text-default-500">Latest actions and updates</p>
+          <p className="text-sm text-muted-foreground">Latest actions and updates</p>
         </div>
-        <Button 
-          variant="light" 
-          color="primary" 
-          size="sm"
-          endContent={<Icon icon="lucide:chevron-right" className="w-4 h-4" />}
-        >
+        <Button variant="outline" size="sm" className="gap-2">
           View all
+          <Home className="w-4 h-4" />
         </Button>
       </CardHeader>
       
@@ -86,27 +84,27 @@ export const ActivityTimeline = () => {
 const ActivityRow = ({ activity }: { activity: ActivityItem }) => {
   const getIconColorClass = () => {
     switch (activity.iconColor) {
-      case "success": return "bg-success/10 text-success";
-      case "primary": return "bg-primary/10 text-primary";
-      case "warning": return "bg-warning/10 text-warning";
-      case "danger": return "bg-danger/10 text-danger";
-      case "purple": return "bg-purple-500/10 text-purple-500";
-      default: return "bg-default/10 text-default";
+      case "success": return "bg-green-100 text-green-600";
+      case "primary": return "bg-blue-100 text-blue-600";
+      case "warning": return "bg-yellow-100 text-yellow-600";
+      case "danger": return "bg-red-100 text-red-600";
+      case "purple": return "bg-purple-100 text-purple-600";
+      default: return "bg-gray-100 text-gray-600";
     }
   };
   
   return (
     <div className="flex items-start gap-3">
       <div className={`p-2.5 rounded-full ${getIconColorClass()}`}>
-        <Icon icon={activity.icon} className="w-4 h-4" />
+        {activity.icon}
       </div>
       
       <div className="flex-1">
         <p className="font-medium text-sm">{activity.title}</p>
-        <p className="text-xs text-default-500 mt-0.5">{activity.description}</p>
+        <p className="text-xs text-muted-foreground mt-0.5">{activity.description}</p>
       </div>
       
-      <span className="text-xs text-default-400 whitespace-nowrap">{activity.time}</span>
+      <span className="text-xs text-muted-foreground whitespace-nowrap">{activity.time}</span>
     </div>
   );
 };

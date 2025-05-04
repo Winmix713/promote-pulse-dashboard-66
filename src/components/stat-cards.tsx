@@ -1,8 +1,7 @@
-// ... existing imports ...
 
 import React from 'react';
-import { Icon } from '@iconify/react';
-import { Card, CardBody } from '@heroui/react';
+import { Card, CardBody } from "@/components/ui/card";
+import { DollarSign, Users, ShoppingBag, Activity, TrendingUp, TrendingDown } from "lucide-react";
 
 export const StatCards = () => {
   return (
@@ -13,7 +12,7 @@ export const StatCards = () => {
         change={20.1}
         isPositive={true}
         subtitle="from last month"
-        icon="lucide:dollar-sign"
+        icon={<DollarSign size={18} />}
         color="primary"
       />
       <StatCard
@@ -22,7 +21,7 @@ export const StatCards = () => {
         change={-36.8}
         isPositive={false}
         subtitle="from last month"
-        icon="lucide:users"
+        icon={<Users size={18} />}
         color="success"
       />
       <StatCard
@@ -31,7 +30,7 @@ export const StatCards = () => {
         change={10.3}
         isPositive={true}
         subtitle="from last month"
-        icon="lucide:shopping-bag"
+        icon={<ShoppingBag size={18} />}
         color="warning"
       />
       <StatCard
@@ -40,7 +39,7 @@ export const StatCards = () => {
         change={8.4}
         isPositive={true}
         subtitle="from last month"
-        icon="lucide:activity"
+        icon={<Activity size={18} />}
         color="danger"
       />
     </div>
@@ -53,7 +52,7 @@ interface StatCardProps {
   change: number;
   isPositive: boolean;
   subtitle: string;
-  icon: string;
+  icon: React.ReactNode;
   color: "primary" | "success" | "warning" | "danger";
 }
 
@@ -68,11 +67,11 @@ const StatCard = ({
 }: StatCardProps) => {
   const getColorClass = () => {
     switch (color) {
-      case "primary": return "bg-primary/10 text-primary";
-      case "success": return "bg-success/10 text-success";
-      case "warning": return "bg-warning/10 text-warning";
-      case "danger": return "bg-danger/10 text-danger";
-      default: return "bg-primary/10 text-primary";
+      case "primary": return "bg-blue-50 text-blue-500";
+      case "success": return "bg-green-50 text-green-500";
+      case "warning": return "bg-yellow-50 text-yellow-500";
+      case "danger": return "bg-red-50 text-red-500";
+      default: return "bg-blue-50 text-blue-500";
     }
   };
 
@@ -80,20 +79,20 @@ const StatCard = ({
     <Card className="border-none shadow-sm">
       <CardBody>
         <div className="flex items-start justify-between mb-4">
-          <p className="text-sm font-medium text-default-600">{title}</p>
+          <p className="text-sm font-medium text-gray-600">{title}</p>
           <div className={`rounded-full p-2.5 ${getColorClass()}`}>
-            <Icon icon={icon} className="w-5 h-5" />
+            {icon}
           </div>
         </div>
         
         <div className="text-2xl font-bold mb-2">{value}</div>
         
         <div className="flex items-center gap-1.5">
-          <div className={`flex items-center gap-1 text-xs font-medium ${isPositive ? "text-success" : "text-danger"}`}>
-            <Icon icon={isPositive ? "lucide:trending-up" : "lucide:trending-down"} className="w-3.5 h-3.5" />
+          <div className={`flex items-center gap-1 text-xs font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}>
+            {isPositive ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
             <span>{Math.abs(change)}%</span>
           </div>
-          <div className="text-xs text-default-400">{subtitle}</div>
+          <div className="text-xs text-gray-400">{subtitle}</div>
         </div>
       </CardBody>
     </Card>
