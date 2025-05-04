@@ -1,10 +1,14 @@
 
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BarChart3, FileText, Home, BellRing } from "lucide-react";
+import { BarChart3, FileText, Home, BellRing, Download, Settings } from "lucide-react";
 import DashboardOverview from "@/components/dashboard/DashboardOverview";
+import { useSettingsDialog } from "@/hooks/useSettingsDialog";
+import { Button } from "@/components/ui/button";
 
 const Dashboard: React.FC = () => {
+  const { open: openSettings } = useSettingsDialog();
+  
   return (
     <div className="space-y-6">
       {/* Dashboard Header - Welcome Message */}
@@ -14,9 +18,9 @@ const Dashboard: React.FC = () => {
           <p className="text-muted-foreground">Here's what's happening with your store today.</p>
         </div>
         <div>
-          <button className="flex items-center gap-2 px-3 py-1.5 text-sm border rounded-lg">
+          <Button variant="outline" size="sm" className="flex items-center gap-2 px-3 py-1.5 text-sm">
             <span>May 4, 2025</span>
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -43,12 +47,19 @@ const Dashboard: React.FC = () => {
           </TabsList>
 
           <div className="flex gap-2">
-            <button className="text-sm px-3 py-1.5 border rounded-lg flex items-center gap-2">
+            <Button variant="outline" size="sm" className="text-sm flex items-center gap-2">
+              <Download className="h-4 w-4" />
               <span>Export</span>
-            </button>
-            <button className="text-sm px-3 py-1.5 border rounded-lg flex items-center gap-2">
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-sm flex items-center gap-2"
+              onClick={openSettings}
+            >
+              <Settings className="h-4 w-4" />
               <span>Settings</span>
-            </button>
+            </Button>
           </div>
         </div>
 

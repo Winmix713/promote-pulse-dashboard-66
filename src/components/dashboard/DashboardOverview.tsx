@@ -3,6 +3,7 @@ import React from "react";
 import DashboardSummary from "@/components/dashboard/DashboardSummary";
 import ActivityTimeline from "@/components/dashboard/ActivityTimeline";
 import PopularProducts from "@/components/dashboard/PopularProducts";
+import Comments from "@/components/dashboard/Comments";
 
 const DashboardOverview: React.FC = () => {
   return (
@@ -14,10 +15,14 @@ const DashboardOverview: React.FC = () => {
         <div className="bg-card border rounded-lg shadow-sm">
           <ActivityTimeline />
         </div>
+
+        <div className="bg-card border rounded-lg shadow-sm">
+          <Comments />
+        </div>
       </div>
       
       {/* Right section - Popular products */}
-      <div className="lg:col-span-1">
+      <div className="lg:col-span-1 space-y-6">
         <PopularProducts />
       </div>
     </div>

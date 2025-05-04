@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import { Package, Users, ShoppingBag, TrendingUp, ArrowUp, ArrowDown } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BalanceChart from "@/components/dashboard/BalanceChart";
 import CustomersList from "@/components/dashboard/CustomersList";
 
@@ -28,7 +27,7 @@ const MetricCard: React.FC<MetricCardProps> = ({
     <button 
       className={`flex-1 px-6 py-6 rounded-xl cursor-pointer transition-all ${
         isActive 
-          ? "bg-white dark:bg-sidebar-accent shadow-md" 
+          ? "bg-white dark:bg-sidebar-accent shadow-sm" 
           : "hover:bg-background/80"
       }`}
       onClick={onClick}
@@ -36,7 +35,9 @@ const MetricCard: React.FC<MetricCardProps> = ({
       <div className={`flex items-center gap-3 mb-2 text-base font-medium ${
         isActive ? "text-foreground" : "text-muted-foreground"
       }`}>
-        <span className={isActive ? "text-foreground" : "text-muted-foreground"}>{icon}</span>
+        <span className={`${isActive ? "text-foreground" : "text-muted-foreground"} bg-muted/50 p-1.5 rounded-md`}>
+          {icon}
+        </span>
         <div>{title}</div>
       </div>
       <div className="flex items-center gap-4">

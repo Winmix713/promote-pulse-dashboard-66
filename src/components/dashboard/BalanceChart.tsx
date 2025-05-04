@@ -14,14 +14,10 @@ const BalanceChart: React.FC<BalanceChartProps> = ({ chartData }) => {
   return (
     <div className="pt-3 px-3 pb-4">
       {/* Chart Legend */}
-      <div className="flex items-center justify-end mb-4 gap-6">
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-[#00A656]"></div>
-          <span className="text-sm text-muted-foreground">This Month</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600"></div>
-          <span className="text-sm text-muted-foreground">Last Month</span>
+      <div className="flex items-center mb-4 px-3">
+        <h3 className="text-lg font-bold">$256k</h3>
+        <div className="ml-2 badge-up inline-flex items-center gap-1 px-2 py-1 rounded-lg">
+          <span className="text-sm">+14.2%</span>
         </div>
       </div>
 

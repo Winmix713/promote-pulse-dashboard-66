@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 interface Comment {
   id: string;
@@ -44,8 +45,16 @@ const Comments: React.FC = () => {
   ];
 
   return (
-    <div className="bg-card border rounded-lg shadow-sm p-5">
-      <h2 className="font-medium text-lg mb-4">Recent Comments</h2>
+    <div className="p-5">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="font-medium text-lg">Recent Comments</h2>
+        <Button variant="link" size="sm" className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1">
+          View all
+          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </Button>
+      </div>
       <div className="space-y-4">
         {comments.map((comment) => (
           <div key={comment.id} className="flex space-x-3 p-2 hover:bg-muted/50 rounded-md transition-colors">

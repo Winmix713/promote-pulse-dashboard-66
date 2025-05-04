@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ChevronRight, MoreHorizontal } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface Product {
   id: string;
@@ -59,9 +60,9 @@ const PopularProducts: React.FC = () => {
     <div className="bg-card border rounded-lg shadow-sm p-5 h-full">
       <div className="flex items-center justify-between mb-5">
         <h2 className="font-medium text-lg">Top Products</h2>
-        <button className="h-8 w-8 flex items-center justify-center rounded-full hover:bg-muted transition-colors">
+        <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
           <MoreHorizontal className="h-5 w-5 text-muted-foreground" />
-        </button>
+        </Button>
       </div>
       
       <div className="space-y-4">
@@ -86,6 +87,11 @@ const PopularProducts: React.FC = () => {
             </div>
           </div>
         ))}
+
+        <Button variant="link" size="sm" className="w-full text-sm text-muted-foreground hover:text-primary flex items-center justify-center gap-1 mt-4">
+          View all products
+          <ChevronRight className="h-4 w-4" />
+        </Button>
       </div>
     </div>
   );

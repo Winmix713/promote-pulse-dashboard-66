@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { Check, User, ShoppingCart, AlertTriangle, UserX } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface ActivityItem {
   id: string;
@@ -9,6 +11,10 @@ interface ActivityItem {
   time: string;
   icon: React.ReactNode;
   iconColor: string; 
+  user?: {
+    name: string;
+    avatar: string;
+  };
 }
 
 const ActivityTimeline: React.FC = () => {
@@ -19,7 +25,11 @@ const ActivityTimeline: React.FC = () => {
       description: 'Customer: Sarah Johnson',
       time: '2 hours ago',
       icon: <Check className="h-4 w-4" />,
-      iconColor: 'bg-green-500 text-white'
+      iconColor: 'bg-green-500 text-white',
+      user: {
+        name: 'Sarah J',
+        avatar: '/placeholder.svg',
+      }
     },
     {
       id: '2',
@@ -27,7 +37,11 @@ const ActivityTimeline: React.FC = () => {
       description: 'User: michael@example.com',
       time: '3 hours ago',
       icon: <User className="h-4 w-4" />,
-      iconColor: 'bg-blue-500 text-white'
+      iconColor: 'bg-blue-500 text-white',
+      user: {
+        name: 'Michael',
+        avatar: '/placeholder.svg',
+      }
     },
     {
       id: '3',
@@ -51,7 +65,11 @@ const ActivityTimeline: React.FC = () => {
       description: 'Order #1122 - $78.50',
       time: 'Yesterday',
       icon: <UserX className="h-4 w-4" />,
-      iconColor: 'bg-purple-500 text-white'
+      iconColor: 'bg-purple-500 text-white',
+      user: {
+        name: 'User 245',
+        avatar: '/placeholder.svg',
+      }
     },
   ];
 
@@ -59,20 +77,27 @@ const ActivityTimeline: React.FC = () => {
     <div className="p-5">
       <div className="flex items-center justify-between mb-4">
         <h2 className="font-medium text-lg">Recent Activity</h2>
-        <button className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1">
+        <Button variant="link" size="sm" className="text-sm text-muted-foreground hover:text-primary flex items-center gap-1">
           View all
           <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </button>
+        </Button>
       </div>
 
       <div className="space-y-4">
         {activities.map((activity) => (
           <div key={activity.id} className="flex space-x-3 p-2 hover:bg-muted/50 rounded-md transition-colors">
-            <div className={`flex items-center justify-center h-8 w-8 rounded-full ${activity.iconColor} shrink-0`}>
-              {activity.icon}
-            </div>
+            {activity.user ? (
+              <Avatar className="h-8 w-8">
+                <AvatarImage src={activity.user.avatar} alt={activity.user.name} />
+                <AvatarFallback>{activity.user.name.charAt(0)}</AvatarFallback>
+              </Avatar>
+            ) : (
+              <div className={`flex items-center justify-center h-8 w-8 rounded-full ${activity.iconColor} shrink-0`}>
+                {activity.icon}
+              </div>
+            )}
             <div className="flex-grow">
               <div className="flex items-baseline gap-2">
                 <h3 className="font-medium text-sm">{activity.title}</h3>
